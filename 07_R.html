@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>Anda's Library - R & Data Science</title>
+        <style type="text/css">
+            body {
+                font-family: arial, Verdana, sans-serif;
+                background-color: rgb(185,179,175);}
+        </style>
+    </head>
+
+<body>
+
+<center>
+    <table width = "700" bgcolor="FFFFFF">
+        <tbody>
+            <tr>
+                <td>
+<font size="2">
+
+<div style="text-align:center"><b><span style="color:rgb(11,83,148)"><font size="3">R</font><font size="3"> &amp; DATA SCIENCE</font></span><span style="color:rgb(0,0,255)"><br>
+</span></b></div>
+
+
+
+<hr>
+<hr>
+
+<dl>
+<dt><span style="color:rgb(11,83,148)"><font size="2"><b>PREREQUISITES</b></font></span></dt>
+<dd>R scripting language
+<ul>
+<li><a href="https://cran.r-project.org/doc/manuals/R-intro.pdf" target="_blank">https://cran.r-project.org/doc/manuals/R-intro.pdf&nbsp;</a> An Introduction to R (CRAN)</li>
+<li><a href="https://docs.google.com/document/d/1h5y9w7xJjlj73LNpF3CG7TAGa-mMkSrF9jmOjokTqCU/edit?usp=sharing" target="_blank">CRAN R manual contents</a></li>
+<li><a href="https://drive.google.com/file/d/1P2O1MuaToQMm0bQJ0GlAHKQ86GR6dVSl/view?usp=sharing" target="_blank">2014 R intro manual</a></li>
+<li><a href="https://drive.google.com/file/d/1nwyzMA9Z4YoJXONG9OFCTxqju7VZwKR6/view?usp=sharing" target="_blank">2004 R cheat sheet</a></li>
+<li><a href="https://drive.google.com/file/d/1CCeYfj6EXrrQ7nEdPZUvT2Qdme9yZscl/view?usp=sharing" target="_blank">Google's Style Guide for R</a><br>
+</li>
+</ul>
+</dd>
+<dd>RStudio IDE
+<ul><li><a href="https://www.rstudio.com/" target="_blank">https://www.rstudio.com/</a></li></ul>
+</dd>
+</dl>
+
+<dl>
+<dt><span style="color:rgb(11,83,148)"><font size="2"><b>THE TRIBE</b></font></span></dt>
+<dd>
+<ul>
+<li><a href="http://hadley.nz/" target="_blank">Hadley Wickham&nbsp;<br>
+</a>
+<ul>
+<li><a href="http://adv-r.had.co.nz/" target="_blank">Advanced R Book</a><br>
+</li>
+<li><a href="https://www.tidyverse.org/" target="_blank">Tidyverse: https://www.tidyverse.org/</a></li>
+<li><a href="https://drive.google.com/file/d/1v5t7gEZoCs9h9JZ6rF7J1IPYaCyqUDI8/view?usp=sharing" target="_blank">Split Apply Combine - theoretical paper</a></li>
+</ul>
+</li>
+
+<li><a href="https://jennybryan.org/" target="_blank">Jenny Bryan</a>
+<ul><li><a href="https://stat545.com/" target="_blank">stat545 UBC</a></li>
+<li><a href="https://twitter.com/JennyBryan?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">twitter</a><br>
+</li>
+</ul>
+</li>
+
+<li><a href="https://juliasilge.com/about/" target="_blank">Julia Silge - RStudio</a></li>
+<li><a href="https://djnavarro.net/" target="_blank">Danielle Navarro - R for Psychology</a></li>
+<li><a href="https://www.personality-project.org/revelle.html" target="_blank">William Revelle - Personality Project in R</a><br>
+</li>
+
+</ul>
+</dd>
+</dl>
+
+<dl>
+<dt><span style="color:rgb(11,83,148)"><font size="2"><b>R ANALYSIS STRATEGY</b></font></span></dt>
+<dd>R Components
+<ul><li>setup structures | sorts |functions</li></ul>
+</dd>
+<dd>Methods
+<ul><li>input | wrangle (data sort &amp; fix)</li></ul>
+</dd>
+<dd>R Statistical Analysis</dd>
+<dd>R Data Modeling</dd>
+</dl>
+
+
+<hr>
+<hr>
+
+<dl>
+<dt><span style="color:rgb(11,83,148)"><font size="2"><b>R COMPONENTS &amp; METHODS</b></font></span></dt>
+
+<dd><span style="background-color:rgb(252,229,205)"><b>Work Files</b></span>
+<ul>
+<li><a href="https://docs.google.com/document/d/1VPmBsjVJ0U6V7qUmt8-PxEzUEHxf0Cd5JBAk7mQk9z0/edit?usp=sharing" target="_blank">built in data sets</a><br>
+</li>
+<li><a href="https://docs.google.com/document/d/1ovSGY9Ur5h1PSgG5OlBBM4ioRmKHFOtsq8lmvdqujfM/edit?usp=sharing" target="_blank">importing files</a><br>
+</li>
+<li><a href="https://docs.google.com/document/d/1zLLkDVClOeztesbgq50fK7Kws1RQtjILyoTXhvmFVJo/edit?usp=sharing" target="_blank">manual data entry</a><br>
+</li>
+<li><a href="https://docs.google.com/document/d/1eHh7ssGiBHSnf8NzprT1BghVg92mhKjzFpKFlA5VA-w/edit?usp=sharing" target="_blank">exporting files</a><br>
+</li>
+</ul>
+</dd>
+
+
+<dt>
+<br>
+</dt>
+<dd><span style="background-color:rgb(252,229,205)"><b>A Scientist’s Guide to Acquiring, Cleaning, and Managing Data in R</b>,  First Edition </span><br>
+</dd>
+<dd><span style="background-color:rgb(255,255,0)">(2018) Samuel E. Buttrey and Lyn R. Whitaker
+</span>
+<ul>
+<li><a href="https://docs.google.com/document/d/1IIz6WG3D6gxx7S5NkHDUmWCbXaYTuk-mx60_XeIYGjo/edit?usp=sharing" target="_blank">contents</a></li>
+<li> <a href="https://docs.google.com/document/d/1hKtNqmilZmUpeBy0HLZQBSeplJyxDCaYyek69QNJ-pU/edit?usp=sharing" target="_blank">ch1</a> R Introduction</li>
+<li><a href="https://docs.google.com/document/d/10HCnB4IxS5xQuF5IYtDoIYoPhcrFpAD6LDb1bixRhow/edit?usp=sharing" target="_blank">ch2</a> R Data, Part1: Vectors</li>
+<li><a href="https://docs.google.com/document/d/1uu55cbs74nu-lI--H1101QY9lj-gF374mNGcMiFDhqs/edit?usp=sharing" target="_blank">ch3</a> R Data, Part2: More Complicated Structures</li>
+<li><a href="https://docs.google.com/document/d/1cVZSKPVYfMwaNZtszm4ZDTgYivX1r3LiVM_pPNfins0/edit?usp=sharing" target="_blank">ch4</a> R Data, Part3: Text and Factors</li>
+ 
+<li><a href="https://docs.google.com/document/d/1tAotl4T-38BVMzohzu23c-TpedX1d-MOTBOpihwtGug/edit?usp=sharing" target="_blank">ch5</a> Writing Functions and Scripts</li>
+<li><a href="https://docs.google.com/document/d/12GW5CQ5CJyp4USODZDAAn-v3HIHDrb_SO-CQSqJY-tg/edit?usp=sharing" target="_blank">ch6</a> Getting Data into and out of R</li>
+</ul>
+</dd>
+
+
+<dt><br>
+</dt>
+<dd><span style="background-color:rgb(252,229,205)"><b>Data Flair: R tutorials</b></span></dd>
+<dd><a href="https://data-flair.training/blogs/r-tutorials-home/" target="_blank">https://data-flair.training/blogs/r-tutorials-home/</a>
+<ol>
+<li><a href="https://docs.google.com/document/d/1VbsA84j9ea4roH-jCkoOFtHyqxVgFnygV31qvvW7W9o/edit?usp=sharing" target="_blank">R overview</a><br>
+</li>
+<li><a href="https://docs.google.com/document/d/15fHsHGgOkKbvGCQm-ds36pJEvLaJap8AzCBp_xWicHY/edit?usp=sharing" target="_blank">R data analysis</a><br>
+</li>
+<li><a href="https://docs.google.com/document/d/1VehmKwgaZt_ATppdPBhYVKfRql7GqvAoc0kydmKMS5g/edit?usp=sharing" target="_blank">R structures</a><br>
+</li>
+<li><a href="https://docs.google.com/document/d/17rW6_Xdmf9dZfwUzQYrraaq2gUp8g-mDrb4UnTi7uyE/edit?usp=sharing" target="_blank">R input/output</a><br>
+</li>
+<li><a href="https://docs.google.com/document/d/1H1CPyekpjAQJpbeRtsCvMhzceO1JRBPC5KrIQsd5g4o/edit?usp=sharing" target="_blank">R functions</a><br>
+</li>
+<li><a href="https://docs.google.com/document/d/1GeEXy9GRLC0YgYIBbCerXSrwvYEeQDqf4ap9SCCNwac/edit?usp=sharing" target="_blank">R control statements</a><br>
+</li>
+<li><a href="https://docs.google.com/document/d/18EFweJAR35lSELqkICTZu-g8hV0DWaHcrFm7Y8IO0xA/edit?usp=sharing" target="_blank">Rs C interface</a><br>
+</li>
+</ol>
+
+</dd>
+</dl>
+
+<hr>
+<hr>
+
+<span style="color:rgb(11,83,148)"><font size="2"><b>TIDYVERSE WORLD</b></font></span>
+
+<ul>
+<li><a href="https://www.tidyverse.org/" target="_blank">https://www.tidyverse.org/</a></li>
+<li><a href="https://drive.google.com/file/d/165N6I1tDbE1OOwLZ5X0n-yleaIDvT1xD/view?usp=sharing" target="_blank">tidyverse summary sheet</a><br>
+</li>
+</ul>
+
+<ul>
+<li>collection of R packages</li>
+<li>data tools for transforming / visualizing data</li>
+<li>core packages:
+
+<ul>
+<li><span style="font-family:courier new,monospace"><b>ggplot2</b></span>
+<ul><li>implements grammar of graphics</li>
+<li>to visualize data</li>
+<li><a href="https://drive.google.com/file/d/15BB3HSb1tCNZVnqFeY-KMQCZ44BH3UBn/view?usp=sharing" target="_blank">ggplot2 summary sheet</a></li></ul>
+</li>
+
+<li><span style="font-family:courier new,monospace"><b>dplyr</b></span>
+<ul><li>grammar of data manipulation</li>
+<li>solve most common data manipulation challenges</li>
+<li><a href="https://drive.google.com/file/d/1Uo-WlbLH0KCTefomW8hNFE7VJpWBLEG6/view?usp=sharing" target="_blank">dyplr summary sheet</a> (data transformation)</li></ul>
+</li>
+
+<li><span style="font-family:courier new,monospace"><b>tidyr</b></span>
+<ul><li>create tidy data</li>
+<li>create data where
+<ul><li>each variable is in a column</li>
+<li>each observation is row</li>
+<li>each value in a cell</li></ul>
+</li>
+</ul>
+
+</li>
+<li><span style="font-family:courier new,monospace"><b>readr</b></span>
+<ul><li>to read rectangular data</li>
+<li><a href="https://drive.google.com/file/d/15BB3HSb1tCNZVnqFeY-KMQCZ44BH3UBn/view?usp=sharing" target="_blank">readr- tidyr summary sheet</a> (data import)</li></ul>
+</li>
+
+<li><span style="font-family:courier new,monospace"><b>purrr</b></span>
+<ul><li>enhances Rs functional programming (FP) toolkit</li>
+<li>tools for functions and vectors</li></ul>
+</li>
+
+<li><span style="font-family:courier new,monospace"><b>tibble</b></span>
+<ul><li>re-imagining of data frame</li></ul>
+</li>
+
+<li><span style="font-family:courier new,monospace"><b>stringr</b></span>
+<ul><li>functions for strings</li></ul>
+</li>
+
+<li><span style="font-family:courier new,monospace"><b>forcats</b></span>
+<ul><li>tools for factors</li></ul>
+</li>
+
+</ul>
+
+</li></ul>
+
+
+<dl>
+<dt><u>Install</u>: <span style="font-family:courier new,monospace"><b>install.packages("tidyverse")</b></span></dt>
+<dt><u>Load</u>: <span style="font-family:courier new,monospace"><b>library(tidyverse)</b></span></dt>
+<dd>Additional specialized packages separate library()</dd>
+</dl>
+
+<dl>
+<dt><u>Useful functions</u></dt>
+<dd><span style="font-family:courier new,monospace"><b>tidyverse_conflicts( )</b></span> conflicts bw tidyverse &amp; other packages</dd>
+<dd><span style="font-family:courier new,monospace"><b>tidyverse_deps( )</b></span> list all tidyverse dependencies</dd>
+<dd><span style="font-family:courier new,monospace"><b>tidyverse_logo( )</b></span> get tidyverse logo → using ASCII or unicode chars</dd>
+<dd><span style="font-family:courier new,monospace"><b>tidyverse_packages( )</b></span> list all tidyverse packages</dd>
+<dd> <span style="font-family:courier new,monospace"><b>tidyverse_update( ) </b></span>update tidyverse packages</dd>
+</dl>
+
+
+<dl>
+<dt><u>Loading data</u></dt>
+<dd><span style="font-family:courier new,monospace"><b>library(datasets)</b></span>&nbsp;load datasets package</dd>
+<dd><span style="font-family:courier new,monospace"><b>library(gapminder)</b></span>&nbsp;load gapminder package</dd>
+<dd><span style="font-family:courier new,monospace"><b>attach(iris)</b></span>&nbsp;attach data to R search path</dd>
+</dl>
+
+<br>
+
+<dl>
+<dt>Textbook notes: <i>R with tidyverse</i><br>
+</dt>
+<dd><b><span style="background-color:rgb(252,229,205)">R for Data Science:</span><br>
+Visualization, Model, Transform, Tidy, &amp; Import</b></dd>
+<dd><span style="background-color:rgb(255,255,0)">(2017) O’Reilly<br>
+Hadley Wickham &amp; Garrett Grunewald:</span><i> </i><br>
+</dd>
+<dd><a href="https://r4ds.had.co.nz/index.html" target="_blank">https://r4ds.had.co.nz/index.html</a>
+<ul><li><a href="https://docs.google.com/document/d/11K2HA6WEAd8Is7RHTQOzOOAI9VDQQ8gdRr2EYfQYOsI/edit?usp=sharing" target="_blank">01 contents &amp; chapter introductions</a><br>
+</li></ul>
+</dd>
+<dd>explore
+<ul><li><a href="https://docs.google.com/document/d/1zF-Lpvxl6TJLeSGNWD9Ouqv0oj5JmZrrlIcjLmQ2kFQ/edit?usp=sharing" target="_blank">03: data visualization</a> | 
+<a href="https://docs.google.com/document/d/1owlpEJX3sT9ge01ex1dmXkZNaPBsd1PM4mpuNFpQlWI/edit?usp=sharing" target="_blank">05: data transformation</a> | 
+<a href="https://docs.google.com/document/d/1IEsFKSxFTMrCS2SXzpre3e6MuzT2VfoinUyA66m8_kc/edit?usp=sharing" target="_blank">07: data analysis</a> | <a href="https://docs.google.com/document/d/1Nt1UHigM0DclpY3Ypub0xwIHXEtVOyugr6l9so3UVxg/edit?usp=sharing" target="_blank">08: workflows for above chapters</a>
+</li></ul>
+</dd>
+<dd>wrangle
+<ul>
+<li><a href="https://docs.google.com/document/d/1S8sc74UOJEVZKzvzXnxOlIwlInGkSwkOK_vqgm5Yj8A/edit?usp=sharing" target="_blank">10: tibbles</a> | <a href="https://docs.google.com/document/d/1FIToquaDKcaSrS2GDNS_ecN8LPKTJ01iSYONH6fDOdY/edit?usp=sharing" target="_blank">11: data import</a> | <a href="https://docs.google.com/document/d/1HI3LnLpM64SNybyV4VDCgvgYBWmP_gq88OiPuRHdDZY/edit?usp=sharing" target="_blank">12: tidy data</a> | <a href="https://docs.google.com/document/d/14Ye9QDRzXvrtLMI9h9mZRmyHxUxUZJ2VZtOpvDEMAaU/edit?usp=sharing" target="_blank">13: relational data</a> | 14: strings | <a href="https://docs.google.com/document/d/116bcHrPxP_tl-N9JndVndq_FLpYZoJV1iphVzbW0KR4/edit?usp=sharing" target="_blank">15: factors</a> | 16: dates and times</li></ul>
+</dd>
+<dd>program
+<ul>
+<li>18: pipes | 19: functions | 20: vectors | 21: iteration</li>
+</ul>
+</dd>
+<dd>model
+<ul><li>23: model basics | 24: model building | 25: many models</li></ul>
+</dd>
+<dd>communicate
+<ul>
+<li>27: R markdown | 28: graphics for communication | 29: R markdown formats | 30: R markdown workflow</li>
+</ul>
+</dd>
+<dt>Course notes: <i>R with tidyverse</i><br>
+</dt>
+<dd><b>UBC: <span style="background-color:rgb(252,229,205)">Introduction to Data Science</span></b></dd>
+<dd><a href="https://ubc-dsci.github.io/introduction-to-datascience/" target="_blank">https://ubc-dsci.github.io/introduction-to-datascience/</a>
+<ol>
+<li><a href="https://docs.google.com/document/d/10T69ai3LQbfAKF8BDAxpjQSXRlcNDQ3ZXgwJGH6sohk/edit?usp=sharing" target="_blank">Introduction to Data Science</a><br>
+</li>
+<li><a href="https://docs.google.com/document/d/10GHoigF9VhP15uK7c4DJzZsLAkATS6Pobv0Fo2xwcaY/edit?usp=sharing" target="_blank">Reading data locally &amp; from the web</a><br>
+</li>
+<li><a href="https://docs.google.com/document/d/1J-qcW3QpOTtlXr3h2jNr1JChCjSC3K_qr7xDOHze_rs/edit?usp=sharing" target="_blank">Cleaning &amp; wrangling data</a><br>
+</li>
+<li>Effective data visualization</li>
+<li>Version control with Github </li>
+<li>Classification I: training &amp; predicting </li>
+<li>Classification II: evaluating &amp; tuning</li>
+<li>Regression I: K-nearest neighbours</li>
+<li>Regression II: linear regression </li>
+<li>Clustering</li>
+</ol>
+</dd>
+
+
+<dt>Course notes: <i>R with tidyverse</i><br>
+</dt>
+<dd><b>UBC: <span style="background-color:rgb(252,229,205)">Stats 545</span></b><span style="background-color:rgb(252,229,205)"> </span>- by Jenny Bryan</dd>
+<dd><a href="https://stat545.com/" target="_blank">https://stat545.com/</a>
+<ul>
+<li><a href="https://docs.google.com/document/d/1dOb5P1-X89a4m8cK-M25pswlCqWZDezFvUqvNchD5ho/edit?usp=sharing" target="_blank">contents</a></li>
+</ul>
+</dd>
+
+</dl>
+<hr>
+<hr>
+<dl>
+<dt><span style="color:rgb(11,83,148)"><b>DATA SCIENCE THEORY<br>
+</b></span></dt>
+<dd><span style="background-color:rgb(252,229,205)"><b>Cheat Sheets</b></span>
+<ul><li><a href="https://drive.google.com/file/d/1pwZ8-0CHm1hlz-FTirGpOK6kob8KFtAr/view?usp=sharing" target="_blank">Data Science Cheat Sheet</a></li></ul>
+</dd>
+
+<dd><span style="background-color:rgb(252,229,205)"><b>Data Modeling</b></span>
+<ul>
+<li><a href="https://docs.google.com/document/d/1hPUILCRDVz0i_4Opb6U_XXmJC3jRuspEjXhTmcnYd20/edit?usp=sharing" target="_blank">Algorithms &amp; Software Prerequisites</a></li>
+
+<li>Multivariate Analysis 1 
+<ul><li><a href="https://docs.google.com/document/d/1IvdlmBMdoaPv9qaMad8ARcYpdMG-50X9bRUsXNCy6jw/edit?usp=sharing" target="_blank">Practical Guide to Cluster Analysis in R:</a> <br>
+ Unsupervised Machine Learning</li>
+<li><span style="background-color:rgb(255,255,0)">(2017) Alboukadel Kassambora</span></li></ul>
+</li>
+<li>Multivariate Analysis 2
+<ul><li><a href="https://docs.google.com/document/d/19GXy5pvMTSW2bkeknFaSu3jrSbvRjd22LYBnodwt82M/edit?usp=sharing" target="_blank">Practical Guide to Principal Components Method in R:</a><br>
+ PCA | (M)CA | FAMD | MFA | MCPC | factoextra</li>
+<li><span style="background-color:rgb(255,255,0)">(2017) Alkoukadel Kassambora</span></li></ul>
+</li>
+</ul>
+
+</dd>
+
+
+<dd><span style="background-color:rgb(252,229,205)"><b>Analysis Considerations by Industry
+</b></span>
+<ul>
+<li><a href="https://docs.google.com/document/d/180n9-GOrYfGXe064b7igKJILP9kC4U4sYJT1mwd6QE0/edit?usp=sharing" target="_blank">Non-Profits</a></li>
+</ul>
+</dd>
+
+
+</dl>
+
+
+<hr>
+<hr>
+
+<dl>
+<dt><span style="color:rgb(11,83,148)"><font size="2"><b>DATA VISUALIZATION</b></font></span></dt>
+<dd><span style="background-color:rgb(252,229,205)"><b>Colour</b></span>
+<ul><li><a href="https://docs.google.com/document/d/10eTzZNT7SE8SDXuuINQqrYN4JhcoB9LJNwSdJ0cp6Qc/edit?usp=sharing" target="_blank">R color</a><br>
+</li>
+<li><a href="https://docs.google.com/document/d/1ad03Hb350BLdn2gD0KDDbJvkZHdiVyKOfujmBK6WDtE/edit?usp=sharing" target="_blank">colorBrewer package</a><br>
+</li>
+<li><a href="https://docs.google.com/document/d/1C9sZ2FGkbUM-gbRH33BjbW2Nf5Q5JRY0OdBHw2qMMF0/edit?usp=sharing" target="_blank">color examples</a><br>
+</li>
+</ul>
+</dd>
+</dl>
+
+<div style="display:block;text-align:left"><img src="images/Rcolors.png" style="width:100%" border="0"></a></div>
+<dl><dd><span style="background-color:rgb(252,229,205)"><b>Graphs</b></span>
+<ul><li><b>ggplot2</b></li></ul>
+</dd>
+<dd><span style="background-color:rgb(252,229,205)"><b>Cartography</b></span>
+<ul><li>cartography sheet sheet with R</li>
+<li><b>Tableau</b></li>
+</ul>
+</dd>
+<dd><span style="background-color:rgb(252,229,205)"><b>Tables
+</b></span>
+<ul><li><b>stringizer</b> | <b>xtable</b> | <b>kable</b> (with knitr)</li></ul>
+</dd>
+<dd><b><span style="background-color:rgb(252,229,205)">Proprietory Apps</span></b>
+<ul><li><b>Infogram</b></li></ul>
+</dd>
+</dl>
+
+<hr>
+<hr>
+
+<dl>
+<dt><span style="color:rgb(11,83,148)"><font size="2"><b>DEVELOPMENT</b></font></span></dt>
+
+<dd><span style="background-color:rgb(252,229,205)"><b>Data Base Tools</b></span>
+<ul><li><b>Spark</b> package</li></ul>
+</dd>
+<dd><span style="background-color:rgb(252,229,205)"><b>Application Development Tools
+</b></span>
+<ul><li><b>shiny</b> package</li></ul>
+</dd>
+</dl>
+
+
+
+<hr>
+<hr>
+<a href="index.html">back home</a>
+
+</font>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+
+</body>
+</html>
