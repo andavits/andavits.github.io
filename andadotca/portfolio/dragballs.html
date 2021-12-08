@@ -1,0 +1,129 @@
+<HTML>
+<HEAD><TITLE>Floating balls</TITLE>
+<STYLE type="text/css">
+	img {position: absolute; zindex: 1 } 
+	#drawsurface { background-color: #99CC33; 
+			   position:relative; top: 10px; 
+			   width:100%;height:100%}
+	#ground { background-color: #663300;
+			   position:absolute; left: 0; top: 50%;
+			   width:100%; height:50%; zindex= -10}
+</STYLE>
+</HEAD>
+<Body>
+
+<SCRIPT language="vbscript">
+<!--
+Dim surface
+Dim surface_left
+Dim surface_top
+Dim imageobj
+set imageobj = Nothing
+
+' set global values
+Sub window_onload
+   Set surface = document.all.drawsurface
+   surface_left = surface.offsetLeft
+   surface_top = surface.offsetTop
+End Sub
+
+' start capture by 
+' trapping which element has received click
+Sub document_onmousedown()
+   Dim thebutton
+   thebutton = window.event.button
+   if (thebutton = 1) then
+	set imageobj = window.event.srcElement
+   end if
+End Sub
+
+Sub document_onmouseup()
+   if (window.event.button = 1) then
+	set imageobj = Nothing
+   end if
+End Sub
+
+' capture mouse movement and move object
+' if control key or shift are pressed, set 
+' zindex value accordingly to move image in stack 
+Sub document_onmousemove()
+dim objleft, objtop
+  if (window.event.button = 1) Then
+    if imageobj.tagname="IMG" then
+
+	  ' new X location is point of click - 
+	  ' left edge of drawing surface and 
+	  ' set to middle of object
+        objleft=window.event.x - surface_left - (imageobj.offsetWidth/2)
+
+	  ' if object has exceeded either border, 
+	  ' set to 0
+        if objleft<0 then objleft=0
+	  if objleft > surface.offsetWidth then objleft = 0
+        imageobj.style.pixelLeft= objleft
+
+	  ' new Y location is point of click - 
+	  ' top edge of drawing surface and 
+	  ' set to middle of object
+        objtop=window.event.y - surface_top -(imageobj.offsetHeight/2)
+
+	  ' if object has exceeded either border,
+	  ' set to 0
+        if objtop<0 then objtop=0
+	  if objtop > 430 then objtop = 0
+        imageobj.style.pixelTop= objtop
+
+        ' prevent event from bubbling up 
+	  ' element hierarchy
+        window.event.returnValue = false
+        window.event.cancelBubble = true
+
+        ' if press control, place image on top
+	  if window.event.ctrlKey then
+		imageobj.style.zindex=imageobj.style.zindex + 1
+		if imageobj.style.zindex > 2 then imageobj.style.zindex=2
+
+        ' if press shift, move image to bottom
+	  elseif window.event.shiftKey then
+		imageobj.style.zindex=imageobj.style.zindex - 1
+		if imageobj.style.zindex < 0 then imageobj.style.zindex=0
+	  end if
+    end if
+  end if
+end Sub
+'-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<!-- add in drawing surface - contain all images 
+     to be moved -->
+<DIV id=drawsurface align=center>
+
+<!-- add ground, no other contents -->
+<DIV id=ground>
+</DIV>
+Place the floating balls in the box. Press the control key to put a ball on top, 
+and the shift key to put ball behind another.<br><font size=1>&copy Anda Vitols 98 - need IE4 to work
+
+<!-- add images to use for drawing -->
+<img src="Blball.gif"
+	STYLE="TOP:100;LEFT:0;width:34;height:34">    
+<img src="Cyball.gif"
+	STYLE="TOP:120;LEFT:60;height:34;width:34">
+<img src="Grball.gif"
+	STYLE="TOP:120;LEFT:150;height:34;width:34">
+<img src="or_dot.gif"
+	STYLE="TOP:300;LEFT:200;height:34;width:34">
+<img src="prball.gif"
+	STYLE="TOP:300;LEFT:230;height:34;width:34">
+<img src="Redball.gif"
+	STYLE="TOP:320;LEFT:260;height:34;width:34">
+<img src="Ylball.gif"
+	STYLE="TOP:320;LEFT:350;height:34;width:34">
+<img src="Ylsquare.gif"
+	STYLE="TOP:120;LEFT:420;height:200;width:216">
+
+</DIV>
+
+</BODY>
+</HTML>
