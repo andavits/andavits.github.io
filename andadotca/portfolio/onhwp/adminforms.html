@@ -1,0 +1,217 @@
+<HTML>
+<HEAD>
+<TITLE>Portfolio - Order Express Administration</TITLE>
+</HEAD>
+<body bgcolor="#FFFFFF" topmargin="0">
+
+<A NAME=top>
+<H1 align=center>Portfolio - Order Express Administration</H1></A>
+<I>These small sample forms show how an adminstrator can use a standard internet browser 
+to make changes to a site.  
+Graphics and server-side scripting code have been removed.</I>
+<BR>
+Go down to
+<UL>
+<LI><A HREF="#new">[Administrator changes the way the opening page of the site looks.]</A>
+<LI><A HREF="#product">[Administrator changes the product catalogue.]</A>
+<LI><A HREF="#consumer">[Administrator processes customer information that has been received over the internet.]</A>
+</UL>
+
+<HR width=90%>
+
+<center><A NAME=new><i><b>Administrator changes the way the opening page of the site looks.</i></B></A></center>
+<h2 align=center> Update New Items</H2>
+
+<CENTER><FORM>
+<table border="1" width="80%" >
+	<tr BGCOLOR="f7efde">
+	<td colspan=2>This page will update the "New Items" section of the 
+	Order Express front page. (maximum 10 items) 
+	<ul>
+	<li>To remove an item, either uncheck the "Show Item" box or replace existing
+		 text to display a new item.
+	<li>To add an item, check the "Show Item" box and enter the information to display. 
+	<li>Each item has an image associated with it. Select an appropriate image from the drop down menu.
+	<li>Press the "Update Site" button when finished. 
+	</ul>
+	</td>
+	</tr>
+	<tr >
+	<th BGCOLOR="#800000"><Font color="#FFFFFF">Show Item</font></th>
+	<th  BGCOLOR="#800000"><Font color="#FFFFFF">New Item Details</font></th>
+	</tr>
+	
+		<tr>
+		<td Align=center BGCOLOR="f7efde"><Input type=checkbox value="TRUE">
+		</td>
+		<td BGCOLOR="f7efde">
+		Select Image to display<BR>
+			Image: <SELECT>  
+			<OPTION VALUE="new" SELECTED>New  
+			<OPTION VALUE="revised">Revised
+			<OPTION VALUE="comingsoon">Coming Soon
+			</SELECT>
+			
+			Title to display for news item:
+  			<input type=text size=50 maxlength=50 > 
+			<br>
+			Text to display:<br>
+  			<input type=text size=90 maxlength=90  > 
+			<P>
+		</td>
+		</tr>
+
+		<tr>
+		<td Align=center BGCOLOR="f7efde"><Input type=checkbox value="TRUE">
+		</td>
+		<td BGCOLOR="f7efde">
+		Select Image to display<BR>
+			Image: <SELECT>  
+			<OPTION VALUE="new" SELECTED>New  
+			<OPTION VALUE="revised">Revised
+			<OPTION VALUE="comingsoon">Coming Soon
+			</SELECT>
+			
+			Title to display for news item:
+  			<input type=text size=50 maxlength=50 > 
+			<br>
+			Text to display:<br>
+  			<input type=text size=90 maxlength=90  > 
+			<P>
+		</td>
+		</tr>
+		
+</table>
+<P>
+<input type=submit name="Action" value="Update Site"> <input name="Action" type=submit value="Return to Admin"></p>
+</FORM>
+</center>
+<P>
+<center><A HREF="#top">Top of page</a></center>
+
+<hr width=90%>
+
+<center><A NAME=product><i><b>Administrator changes the product catalogue.</I></B></A></center>
+<H2 ALIGN=CENTER>Order Express Product Update (or Delete)</H2>
+<I>Adminstrator chooses the product to be updated or deleted.</I>
+<CENTER>
+<table border="0" width="80%">
+	<tr>
+		<td colspan=2>
+			Select the Product to Update:
+			<P>
+		</td>
+	</tr>
+	<tr>
+		<td><A HREF="Product ID">Product ID</A>
+		</td>
+		<td><A HREF="product name">Product Name</A>
+		</td>
+	</tr>
+
+	<tr>
+		<td><A HREF="Product ID">Product ID</A>		
+	   	</td>
+		<td><A HREF="product name">Product Name</A>
+		</td>
+	</tr>
+
+	<tr>
+		<td><A HREF="Product ID">Product ID</A>		
+	   	</td>
+		<td><A HREF="product name">Product Name</A>
+		</td>
+	</tr>
+
+</table>
+</center>
+<I>Once the product to be updated or deleted has been selected, the form below appears.</I>
+<HR width=90%>
+
+<H2 ALIGN=CENTER>Order Express Product Update (or Delete or Add)</H2>
+<I>The administrator uses a form like this to update an existing product from the catalogue
+database, delete and existing product, or add a new product to the product catalogue 
+database.</I>
+
+<center><FORM>
+<table border="0" width="80%">
+
+<TR>
+<TD align=right>Product Name</TD> 
+<TD><input type=text size=80 maxlength=250 name="ProductName" ></TD>
+</TR>
+<TR>
+<TD align=right>Product Despcription</TD> 
+<TD><textarea rows=8 columns=80 maxlength=600 name="ProductDescription" ></textarea></TD>
+</TR>
+<TR>
+<TD align=right>Category</TD> 
+<TD>
+<SELECT NAME="Category">
+	<option value="1" >Consumer
+	<option value="2" >Builder
+	<option value="3" >Technical
+    </SELECT>
+</TD>
+</TR>
+<TR>
+<TD align=right>Units in Stock</TD> 
+<TD><SELECT NAME="UnitsInStock">
+	<option value="0" >no
+	<option value="1" >yes
+    </SELECT>	
+</TD>
+</TR>
+<TR>
+<TD align=right>Consumer Price</TD> 
+<TD><input type=text size=8 maxlength=8 name="ConsumerPrice" ></TD>
+</TR>
+<TR>
+<TD align=right>Builder Price</TD> 
+<TD><input type=text size=8 maxlength=8 name="BuilderPrice" ></TD>
+</TR>
+<TR>
+<TD align=right>One Free
+</TD>
+<TD><input type=radio name="OneFree" value="true" >yes &nbsp; &nbsp;
+    <input type=radio name="OneFree" value="false" checked>no</TD>
+</TR>
+<TR>
+<TD align=right>Product Image Filename</TD> 
+<TD><input type=text size=50 maxlength=50 name="ProductImage" ></TD>
+</TR>
+<TR>
+<TD align=right>Product Flag</TD> 
+<TD><input type=text size=15 maxlength=15 name="ProductFlag" ></TD>
+</TR>
+<TR>
+<TD align=right>Product On-line</TD> 
+<TD><input type=radio name="ProductOnline" value="yes" checked>yes &nbsp; &nbsp;
+    <input type=radio name="ProductOnline" value="no">no</TD>
+</TR>
+<TR>
+<TD align=right>Product Preview URL</TD> 
+<TD><input type=text size=70 maxlength=70 name="ProductPreviewURL" value="http://"></TD>
+</TR>
+</TABLE>
+<center>
+<INPUT TYPE=SUBMIT NAME="Action" VALUE="Update Product">
+<INPUT TYPE=SUBMIT NAME="Action" VALUE="Cancel"> 
+</FORM>
+</center>
+
+<center><a Href="#top">Top of page</A></center>
+
+<hr width=90%>
+<center><A Name=consumer><I><B>Administrator processes consumer information that has been received over the internet.</I></B></A></center>
+<I>Uses the same logic as in the product catalogue administration: 
+The administrator selects a consumer by clicking a hyperlink. This pulls up a form with the 
+consumer information and the corresponding products ordered. The order is then sent to the 
+consumer through traditional methods.</I>
+<P>
+<center><a Href="#top">Top of page</A></center>
+
+<HR width=90%>
+
+</BODY>
+</HTML>
