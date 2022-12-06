@@ -21,291 +21,154 @@
 
 <div style="text-align:center"><b><span style="color:rgb(11,83,148)"><font size="3">DATA SCIENCE USING R</font></span></b></div>
 
-
-<br>
-<br>
-
-
-<div style="border:solid orange 3.0pt;padding:.2in 0.2in 0.2in 0.2in">
-<dl>
-<dt><span style="color:rgb(11,83,148)"><font size="2"><b>PREREQUISITES</b></font></span></dt>
-<dd>
-    <ul><li><a href="https://docs.google.com/document/d/1yCDK1VIsSIgyCsXqlrDo2NuEDij8SFWRCp8skD3tw1k/edit?usp=sharing">about R programming language</a></li>
-        <li><a href="https://docs.google.com/document/d/1vANIGVkhHK-NcdXEOpNZ-vvetk1fWdhFWjgLiXfd79A/edit?usp=sharing">about RStudio IDE</a></li>
-    </ul>
-</dd>
-</dl>
-</div>
-
 <br>
 
 <div style="border:solid green 3.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<p>R is a <dfn>functional</dfn> programming language with <dfn>object-orientated</dfn> abilities, designed for calculating <dfn>statistics</dfn>, using <dfn>vectors</dfn>.
+The combination of the above attributes, result in a lean, intuitive way to script statisitcal analysis.</p>
+<p>R is <dfn>open source</dfn>, growing in every dimension, further accomodating Big data and Machine Learning calculations, lean distribution of results, and integration with other computer platforms.</p>
+<p>Finally, R is fun!</p>
 
-<span style="color:rgb(11,83,148)"><font size="2"><b>R - NATIVE/CORE</b></font></span>
+<div style="border:solid green 3.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<p><b>START HERE:</b><br>
+Today <dfn>RStudio</dfn> (Posit) IDE & <dfn>Tidyverse</dfn> apps are goto foundation to start any project. </p>
 
-<dl>
-<dt>BOOK: <b>A Scientist’s Guide to Acquiring, Cleaning, and Managing Data in R</b></dt>
-<dd>2018, Samuel E. Buttrey and Lyn R. Whitaker</dd>
-<dd><a href="https://docs.google.com/document/d/1IIz6WG3D6gxx7S5NkHDUmWCbXaYTuk-mx60_XeIYGjo/edit?usp=sharing" target="_blank">contents</a></dd>
-<dd>chapter notes:
-    <ul>
-<li> <a href="https://docs.google.com/document/d/1hKtNqmilZmUpeBy0HLZQBSeplJyxDCaYyek69QNJ-pU/edit?usp=sharing" target="_blank">ch1</a> R Introduction</li>
-<li><a href="https://docs.google.com/document/d/10HCnB4IxS5xQuF5IYtDoIYoPhcrFpAD6LDb1bixRhow/edit?usp=sharing" target="_blank">ch2</a> R Data, Part1: Vectors</li>
-<li><a href="https://docs.google.com/document/d/1uu55cbs74nu-lI--H1101QY9lj-gF374mNGcMiFDhqs/edit?usp=sharing" target="_blank">ch3</a> R Data, Part2: More Complicated Structures</li>
-<li><a href="https://docs.google.com/document/d/1cVZSKPVYfMwaNZtszm4ZDTgYivX1r3LiVM_pPNfins0/edit?usp=sharing" target="_blank">ch4</a> R Data, Part3: Text and Factors</li> 
-<li><a href="https://docs.google.com/document/d/1tAotl4T-38BVMzohzu23c-TpedX1d-MOTBOpihwtGug/edit?usp=sharing" target="_blank">ch5</a> Writing Functions and Scripts</li>
-<li><a href="https://docs.google.com/document/d/12GW5CQ5CJyp4USODZDAAn-v3HIHDrb_SO-CQSqJY-tg/edit?usp=sharing" target="_blank">ch6</a> Getting Data into and out of R</li>
-</ul>
-</dd>
+<p><b>RStudio IDE</b> has 4 panels for scripting, showing computations, looking at data structures, and finally, resources and outputs. These panels are context-driven, depending on what application you are scripting with. RStudio IDE can also be used with non-R apps, such as Python and scripting for websites (HTML, CSS, Javascript etc). </p>
 
+<p><b>Tidyverse</b> is a <dfn>R app</dfn> that is intended to make both computers and humans happy. 
+Tidyverse creates data frames that are perfect for <dfn>computational statistics</dfn>. They are called <dfn><b>“tibbles”</b></dfn>, which are long and skinny dataframes, created from real-world data such as table summaries or features from databases. 
+Tidyverse also has scripting syntax that uses a <dfn><b>“pipe”</b></dfn>, a connection symbol, that allows humans to type procedures in <dfn>time-logical order</dfn>. This happens -and then- that happens -and then- the other happens… This is in contrast to the <dfn>nested</dfn> way that programming usually is scripted, which resembles the architecture of data being used. </p>
+[link to tidyverse details]
+</div>
 
-<dt><br>
-</dt>
-
-<dt>COURSE:<b> Data Flair: R tutorials</b></dt>
-<dd><a href="https://data-flair.training/blogs/r-tutorials-home/" target="_blank">https://data-flair.training/blogs/r-tutorials-home/</a></dd>
-<dd>topics:
-<ol>
-<li><a href="https://docs.google.com/document/d/1VbsA84j9ea4roH-jCkoOFtHyqxVgFnygV31qvvW7W9o/edit?usp=sharing" target="_blank">R overview</a><br>
-</li>
-<li><a href="https://docs.google.com/document/d/15fHsHGgOkKbvGCQm-ds36pJEvLaJap8AzCBp_xWicHY/edit?usp=sharing" target="_blank">R data analysis</a><br>
-</li>
-<li><a href="https://docs.google.com/document/d/1VehmKwgaZt_ATppdPBhYVKfRql7GqvAoc0kydmKMS5g/edit?usp=sharing" target="_blank">R structures</a><br>
-</li>
-<li><a href="https://docs.google.com/document/d/17rW6_Xdmf9dZfwUzQYrraaq2gUp8g-mDrb4UnTi7uyE/edit?usp=sharing" target="_blank">R input/output</a><br>
-</li>
-<li><a href="https://docs.google.com/document/d/1H1CPyekpjAQJpbeRtsCvMhzceO1JRBPC5KrIQsd5g4o/edit?usp=sharing" target="_blank">R functions</a><br>
-</li>
-<li><a href="https://docs.google.com/document/d/1GeEXy9GRLC0YgYIBbCerXSrwvYEeQDqf4ap9SCCNwac/edit?usp=sharing" target="_blank">R control statements</a><br>
-</li>
-<li><a href="https://docs.google.com/document/d/18EFweJAR35lSELqkICTZu-g8hV0DWaHcrFm7Y8IO0xA/edit?usp=sharing" target="_blank">Rs C interface</a><br>
-</li>
+<br>
+<div style="border:solid green 3.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<b>R is the tool used to analyse data.</b> This is done in 3 parts
+<ol><li>Gathering and preparing data for analysis</li>
+<li>Doing the analysis</li>
+<li>Reporting results from the analysis</li>
 </ol>
-</dd>
 
-</dl>
-
-
-<div style="border:solid orange 3.0pt;padding:.2in 0.2in 0.2in 0.2in">
 <dl>
-<dt><span style="color:rgb(11,83,148)"><font size="2"><b>PACKAGES for R NATIVE</b></font></span></dt>
+    <dt>part 1: GATHERING ADN PREPARING DATA FOR ANALYSIS</dt>
+    <dd><u>Purpose</u>: to get a clean dataset loaded into the R workspace</dd>
+    <dd><u>Step1</u>: load real-word datasets into workspace </dd>
+    <dd><u>Step2</u>: <dfn><b>“split-apply-combine”</b></dfn> 
+        <ul><li>
+    A foundational data-wrangling procedure, coined by <i><u>Hadley Wickham</u></i> author of <i>Tidyverse</i> and the <i>tibble</i>. It means that we split off just the data we want from real-world collections, apply fixes to the datasets so it can be combined with other datasets, to create a dataframe that statistical computers like. </li></ul>
+    </dd>
 
-<dd>Tables
-<ul><li><span style="font-family:courier new,monospace"><b>stringizer</b></span></li>
-    <li><span style="font-family:courier new,monospace"><b>xtable</b></span></li>
-    <li><span style="font-family:courier new,monospace"><b>kable</b></span> (with knitr)</li></ul>
-</dd>
+    <dd><br></dd>
+    <dt>part 2: DOING THE ANALYSIS</dt>
+    <dd><u>Purpose</u>: an interactive process to understand what the data is saying, and then perhaps, acting on it. 
+        <ul>
+            <li><i>Understanding what data is saying</i> - By looking at its patterns, or finding mathematical equations that describe it. </li>
+            <li><i>Acting on it</i> - Processing data further, by perhaps creating new variables from existing variables. (e.g. creating rates of change), comparing data to other data (e.g. compare to other datasets, or mathematical distributions), or predicting how data will change in future. </li>
+        </ul>
+    </dd>
 
+<dd><br></dd>
+<dt>part3: REPORTING RESULTS FORM ANALYSIS
+    <dd><u>Purpose</u>: Reports from data analysis can be published as whitepaper, infographics, and dashboards. Reports are usually written for private use, while infographics and dashboards are great for public consumption. </dd>
+    <dd><u>Report types</u>
+        <ul>
+        <li><b><dfn>Infographics</dfn></b>: data summarised into blocks on a poster (online | billboard | handout)</li>
+        <li><b><dfn>Descriptive statistical plot</dfn></b>: (online | poster | report)</li>
+        <li><b><dfn>Statistical test results</dfn></b>: look like gobbledigook, requiring translation into human readable form. </li>
+        </ul>
+    </dd>
+    <dd><u>Dashboard</u> (Shiny)
+    <ul><li>Dashboards are online posters. They give a quick summary of data in a way that is understandable to humans. A dashboard can be designed as an infographic or a standalone plot. An infographic is a poster sectioned into blocks containing summarised results, while a standalone plot has legends and labels explaining what the graph is about. </li>
+    <li><u>Dashboard types</u>: 
+        <ul><li><b><i>View only</i></b> (static | realtime changing data)</li>
+        <li><b><i>Interactive</i></b> (interactive static data | interactive dynamic data)</li></ul>
+    </li>
+    </ul>
+    </dd>
 
-<dd>Data Base Tools
-<ul><li><span style="font-family:courier new,monospace"><b>Spark</b></span></li></ul>
-</dd>
-<dd>Application Development Tools
-<ul><li><span style="font-family:courier new,monospace"><b>shiny</b></span></li></ul>
-</dd>
 </dl>
-</div>
 
 </div>
+</div>   
 
+<br>
+<div style="text-align:center"><b><span style="color:rgb(11,83,148)"><font size="3">DETAILS</font></span></b></div>
 <br>
 
 <div style="border:solid green 3.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<b>HOW TO USE R FOR STATISTICAL & DATA ANALYSIS</b><br>
+[ <a href = "08Rexps.html">Examples of individual R techniques</a> ] [ <a href = "08Rexps.html">Full analysis projects</a> ]<br>
+<dl>
+    <dt>HOW DATA WORKS</dt>
+        <dd>variable types
+            <ul><li><b><dfn>continuous</dfn></b> v <b><dfn>categorical</dfn></b></li>
+                <li>other: <b><dfn>time data</dfn></b> | <b><dfn>string data</dfn></b></li></ul>
+            </dd>
+        <dd>variable distribution types: <b><dfn>parametric</dfn></b> v <b><dfn>non-parametric</dfn></b> (ranking order sets)</dd>
+    <dt>HOW R WORKS</dt>
+        <dd>R is <b><dfn>vector-based</dfn></b> - so all data must convert to vector-format to be computed
+            <ul><li><b><dfn>scalar</dfn></b> converts to vector in calculation</li>
+            <li><b><dfn>matrices</dfn></b> & <b><dfn>dataframes</dfn></b> have same length rows/cols - matrices are all same data type, while dataframe can have many datatypes</li>
+            <li><b><dfn>list</dfn></b> contains variables of many types and lengths - e.g. a customer profile & an <b><dfn>array</dfn></b> is a list of lists</li>
+        </ul>
+    </dd>
+        <dd>function process: take an object - do something to object - return an object</dd>
+    <dt>MY FUNCTIONS</dt>
+        <dd><u>about</u>: Creat my own functions for repetative tasks</dd>
+        <dd><u>why</u>: It creates consistency in my programming analysis thought process</dd>
+</dl>
 
-<span style="color:rgb(11,83,148)"><font size="2"><b>TIDYVERSE WORLD</b></font></span>
+<div style="border:solid green 3.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<b>MODELING & DATA MINING</b>
+<p>Once we have an idea of what our data is about, we can use computer modeling techniques for analysis. Computer procedures are based on mathematica of statistical modeling, or the mathematics of computer sorting procedures. There are many applications, and all are <dfn>iterative processes</dfn> to grow an information structure based on previous information.</p>
 
-<div style="border:solid orange; 3.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<p>Key similarities in modeling procesres, is the use of <dfn>training</dfn> and <dfn>test</dfn> datasets. Training datasets creates the mathematical model describing data, while test datasets see if the model can generalize. ie. be relevant to other similar data. The other key similariy is that there is extra error analysis on how confident we are that the model described what we wanted it too.</p>
 
-<p>R is a funcation language, with object orientated abilities, perfect for independent libraries. Tidyverse is a seperate object. It focuses on creating "tidy" data, appropraite for computational statistics, and a "pipe" which turns nested functions into intuitive, stepwise procedural commands.</p> 
+<dl>
+    <dt>modeling considerations</dt>
+    <dd><ul>
+        <li>learning types: <b><dfn>supervised</dfn></b> (regression | categorizing) v <b><dfn>unsupervised</dfn></b></li>
+        <li>model dataset preperations for "big data"</li>
+        <li>model error analaysis, and our confidence in it</li>
+    </ul></dd>
+</dl>
 
-<ul>
-<li><a href="https://www.tidyverse.org/" target="_blank">https://www.tidyverse.org/</a></li>
-<li><a href="https://drive.google.com/file/d/165N6I1tDbE1OOwLZ5X0n-yleaIDvT1xD/view?usp=sharing" target="_blank">tidyverse summary sheet</a><br></li>
-<li><a href="https://docs.google.com/document/d/1-uV7YetQP4ySLzjNRQ7F3Wctd6kbUyeOZKZx5urYH2U/edit?usp=sharing">about tidyverse</a></li>
-</ul>
-
-<ul>
-    <li><a href="https://docs.google.com/document/d/1nxrG1oGkufvZOwNa7dOcwCWpQsIKAmbUNDn2HP2PbGk/edit?usp=sharing">ref_vitols_tidyverse</a></li>
-    <li><a href="https://docs.google.com/document/d/1uw5r9fNkoXYWxeHKm6Tz8Zw1fUZg25bsW7ywjFzauz4/edit?usp=sharing">ref_vitols_tidyr</a></li>
-    <li><a href="https://docs.google.com/document/d/1xF_LbTOdsrW73w0LcCcmkRHKzWs8S4yBTk5myBxm5dA/edit?usp=sharing">ref_vitols_dyplyr</a></li>
-</ul>
 
 </div>
 
+
+
+</div>
+
+
+<br>
+<div style="border:solid green 3.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<b>R FOR PSYCHOLOGY</b>
 <dl>
-<dt>BOOK: <b>R for Data Science:</b></dt>
-<dd><i>Visualization, Model, Transform, Tidy, &amp; Import</i></dd>
-<dd>2017 Hadley Wickham, Garrett Grunewald</dd>
-<dd><a href="https://r4ds.had.co.nz/index.html" target="_blank">https://r4ds.had.co.nz/index.html</a></dd>
-<dd>sections and chapters:
-<ul><li><a href="https://docs.google.com/document/d/11K2HA6WEAd8Is7RHTQOzOOAI9VDQQ8gdRr2EYfQYOsI/edit?usp=sharing" target="_blank">01 contents &amp; chapter introductions</a><br></li>
-<li>explore:
-<ul><li><a href="https://docs.google.com/document/d/1zF-Lpvxl6TJLeSGNWD9Ouqv0oj5JmZrrlIcjLmQ2kFQ/edit?usp=sharing" target="_blank">03: data visualization</a> | 
-<a href="https://docs.google.com/document/d/1owlpEJX3sT9ge01ex1dmXkZNaPBsd1PM4mpuNFpQlWI/edit?usp=sharing" target="_blank">05: data transformation</a> | 
-<a href="https://docs.google.com/document/d/1IEsFKSxFTMrCS2SXzpre3e6MuzT2VfoinUyA66m8_kc/edit?usp=sharing" target="_blank">07: data analysis</a> | <a href="https://docs.google.com/document/d/1Nt1UHigM0DclpY3Ypub0xwIHXEtVOyugr6l9so3UVxg/edit?usp=sharing" target="_blank">08: workflows for above chapters</a>
-</li></ul>
-</li>
-
-<li>wrangle
-<ul>
-<li><a href="https://docs.google.com/document/d/1S8sc74UOJEVZKzvzXnxOlIwlInGkSwkOK_vqgm5Yj8A/edit?usp=sharing" target="_blank">10: tibbles</a> | <a href="https://docs.google.com/document/d/1FIToquaDKcaSrS2GDNS_ecN8LPKTJ01iSYONH6fDOdY/edit?usp=sharing" target="_blank">11: data import</a> | <a href="https://docs.google.com/document/d/1HI3LnLpM64SNybyV4VDCgvgYBWmP_gq88OiPuRHdDZY/edit?usp=sharing" target="_blank">12: tidy data</a> | <a href="https://docs.google.com/document/d/14Ye9QDRzXvrtLMI9h9mZRmyHxUxUZJ2VZtOpvDEMAaU/edit?usp=sharing" target="_blank">13: relational data</a> | 14: strings | <a href="https://docs.google.com/document/d/116bcHrPxP_tl-N9JndVndq_FLpYZoJV1iphVzbW0KR4/edit?usp=sharing" target="_blank">15: factors</a> | 16: dates and times</li></ul>
-</li>
-
-<li>program
-<ul>
-<li>18: pipes | 19: functions | 20: vectors | 21: iteration</li>
-</ul>
-</li>
-
-<li>model
-<ul><li>23: model basics | 24: model building | 25: many models</li></ul>
-</li>
-
-<li>communicate
-<ul>
-<li>27: R markdown | 28: graphics for communication | 29: R markdown formats | 30: R markdown workflow</li>
-</ul>
-</li>
-</ul>
-</dd>
-</dl>
-
-<dl>
-<dt>COURSE: <b>UBC: Introduction to Data Science</b></dt>
-<dd><a href="https://ubc-dsci.github.io/introduction-to-datascience/" target="_blank">https://ubc-dsci.github.io/introduction-to-datascience/</a></dd>
-<dd>chapters:
-<ul>
-<li><a href="https://docs.google.com/document/d/10T69ai3LQbfAKF8BDAxpjQSXRlcNDQ3ZXgwJGH6sohk/edit?usp=sharing" target="_blank">Introduction to Data Science</a><br></li>
-<li><a href="https://docs.google.com/document/d/10GHoigF9VhP15uK7c4DJzZsLAkATS6Pobv0Fo2xwcaY/edit?usp=sharing" target="_blank">Reading data locally &amp; from the web</a><br></li>
-<li><a href="https://docs.google.com/document/d/1J-qcW3QpOTtlXr3h2jNr1JChCjSC3K_qr7xDOHze_rs/edit?usp=sharing" target="_blank">Cleaning &amp; wrangling data</a><br></li>
-<li>Effective data visualization</li>
-<li>Version control with Github</li>
-<li>Classification I: training &amp; predicting | Classification II: evaluating &amp; tuning</li>
-<li>Regression I: K-nearest neighbours | Regression II: linear regression</li>
-<li>Clustering</li>
-</ul>
-</dd>
-</dl>
-
-<dl>
-<dt>BOOK: <a href="datasciencebook.ca">datasciencebook.ca</a> Jenny Bryan</dt>
-<dt>COURSE: <b>UBC: stats545 - Data Wrangling: exploration and analysis with R</b><br></dt>
-<dd>(everything but <i>statistical modeling</i> and <i>inference</i>)</dd>
-<dd>classification | regression | clustering
-<dd><a href="https://stat545.com/" target="_blank">https://stat545.com/</a></dd>
-<dd><a href="https://docs.google.com/document/d/1dOb5P1-X89a4m8cK-M25pswlCqWZDezFvUqvNchD5ho/edit?usp=sharing" target="_blank">contents</a></dd>
+    <dt><a href="05a_psychpkg.html">Personality Project & <b>psych</b> package.</a> <u>Revelle</u></dt>
+    <dd><ol><li>constructing psychometrics</li>
+        <li>constructing personality studies</li>
+        <li>using <b>psych</b> package</li></ol>
+    </dd>
+    <dt>Using R & tidyverse for psychology studies. <u>Navarro</u></dt>
+    <dd>Books
+        <ul><li>Book: Introduction to R <u>Navarro</u></li>
+            <li>Book: R for Psychology <u>Navarro</u></li></ul>
+        </dd>
+    <dd>Data collection for psychology experiments - javascript apps
+        <ul><li><b>jPsych app</b> - collecting data for traditional psychological experiments</li> 
+            <li><b>jaysire app</b> <u>Navarro</u> - combines jpsych and R strengths</li>
+        </ul></dd>
+    <dd>Simulations - cognitive & learning psychology
+        <ul><li>Rescola-Wagner model in R - learning rft patterns</li>
+            <li><a href="16_cognition.html">Cognitive architecture</a> -> Deep & Reinforcement Learning (ML)</li>
+        </ul></dd>
 </dl>
 
 </div>
+
 
 <br><br>
-
-
-<div style="border:solid green 3.0pt;padding:.2in 0.2in 0.2in 0.2in">
-
-
-<span style="color:rgb(11,83,148)"><b>R MODELING PROCESS<br></b></span>
-<img src="images/data-science-model.svg" width = "400"><br>
-<img src="images/modeling-process.svg" width = "700">
-
-<br>
-<br>
-
-
-
-<div style="border:solid orange 3.0pt;padding:.2in 0.2in 0.2in 0.2in">
-
-<ul>
-<li>CHEATSHEET: <a href="https://drive.google.com/file/d/1pwZ8-0CHm1hlz-FTirGpOK6kob8KFtAr/view?usp=sharing" target="_blank">Data Science Cheat Sheet</a></li>
-<li>REF: <a href="https://docs.google.com/document/d/1hPUILCRDVz0i_4Opb6U_XXmJC3jRuspEjXhTmcnYd20/edit?usp=sharing" target="_blank">Data Modeling - Algorithms &amp; Software Prerequisites</a></li>
-<li>REF: Analysis by Industry
-    <ul>
-    <li><a href="https://docs.google.com/document/d/180n9-GOrYfGXe064b7igKJILP9kC4U4sYJT1mwd6QE0/edit?usp=sharing" target="_blank">Non-Profits</a></li>
-    </ul>
-</li>
-<li>REF: contents - presentations on machine learning, deep learning, bots</li>
-<li>REF: Data Mining and Models with R
-    <ul><li>data reduction | clustering | classification | anomaly detection | association analysis | regression analysis | sequential patterns | text mining</li>
-</ul>
-<ul><li>ML fields
-    <ul><li><b>classification</b>: assign category characteristics (blue / red / yellow)</li>
-        <li><b>regression</b>: forcast value (temp / price)</li>
-        <li><b>ranking</b>: organize criteria</li>
-        <li><b>clustering</b>: group in clusters</li>
-        <li><b>dimensionality reduction</b>: digital image networking</li></ul>
-    </li>
-</ul>
-</li>
-</ul>
-</div>
-
-
-<dl>
-<dt></dt>
-<dd>BOOK: <b>An Introduction to Statistical Learning</b>
-    <ul><li><i>with Applications in R</i></li>
-        <li>2021 James | Witten | Hastie | Tikshironi</li>
-        <li><a href= "https://www.statlearning.com/" target="_blank">www.statlearning.com</a></li>
-        <li>pdf in library</li>
-    </ul>
-</dd>
-
-<dd><br></dd>
-<dd>BOOK: <b>Multivariate Analysis 1: Practical Guide to Cluster Analysis in R</b>
-    <ul><li>Unsupervised Machine Learning</li>
-    <li>2017, Alboukadel Kassambora</li>
-    <li>pdf in library</li>
-    <li><a href="https://docs.google.com/document/d/1IvdlmBMdoaPv9qaMad8ARcYpdMG-50X9bRUsXNCy6jw/edit?usp=sharing" target="_blank">contents</a> </li>
-</ul>
-</dd>
-
-<dd><br></dd>
-<dd>BOOK: <b>Multivariate Analysis 2: Practical Guide to Principal Components Method in R</b>
-    <ul><li>PCA | (M)CA | FAMD | MFA | MCPC | factoextra</li>
-    <li>2017, Alkoukadel Kassambora</li>
-    <li>pdf in library</li>
-    <li><a href="https://docs.google.com/document/d/19GXy5pvMTSW2bkeknFaSu3jrSbvRjd22LYBnodwt82M/edit?usp=sharing" target="_blank">contents</a><br></li>
-    </ul>
-</dd>
-</dl>
-
-<br>
-</div>
-
-<div style="border:solid green 3.0pt;padding:.2in 0.2in 0.2in 0.2in">
-<dl>
-<dt><span style="color:rgb(11,83,148)"><b>DATA MODEL VALIDITY</b></span></dt>
-<dd>REF: <a href = "https://docs.google.com/document/d/1Epe0QR6HgB0PhSYiq0b62_ytAGzbFYzo5ZYJl2p-_Yw/edit?usp=sharing">contents: model fairness & validity - folder</a>
-</dd>
-<dd>BOOK: <b>Weapons of Math Destruction</b>
-    <ul><li>2016 Cathy O'neal</li>
-        <li>pdf & textfiles in library</li>
-    </ul>
-</dd>
-
-<dd>COGNITIVE SECURUTY: 
-    <ul><li>misinformation algorithms: via 
-        <ul><li>fear  (OCEAN model, N for neurotic)</li><li>gaslighting (lies)</li><li>pushing what receiver wants to hear, is willing to hear</li></ul></li>
-        <li>person not wanting to listen to information: 
-            <ul><li>cogntive dissonance (do not want to believe that family, government capable of being dangerous)</li><li>fear (of govt)</li><li>co-dependency (fear of self-reliance - enables manipulator)</li>
-                <li>projecting, flipping, denying - person very defensive, angry</li></ul></li>
-    </ul>
-</dd>
-</dl>
-</div>
-
-
-<div style="border:solid green 3.0pt;padding:.2in 0.2in 0.2in 0.2in">
-<center>
-<span style="color:rgb(106,168,79)"><b>Humour - case study</b></span><br>
-<img src="images/algoRhythm.png" width = "400" height = "140" border="0"><br>
-From Movie <a href= "https://talliforniacinema.vhx.tv/packages/chasing-unicorns-1/videos/chasing-unicorns">Chasing Unicorns</a>  | <a href = "https://talliforniacinema.vhx.tv/packages/chasing-unicorns-1/videos/chasing-unicorns-teaser-trailer-2021">Trailer</a>
-</center>
-</div>
-
-
-<br>
-<center><a href="https://docs.google.com/document/d/1qj5IWa6tHKyxayGQxxt9nAmMdRy7CBGq519qc_aaQBc/edit?usp=sharing">my full data science book list</a></center><br>       
 
 <a href="index.html">back home</a>
 
