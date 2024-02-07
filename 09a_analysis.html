@@ -27,161 +27,247 @@
 <font size="2">
 
 <div style="border:solid green 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
-<div><span style="color:rgb(11,83,148)"><font size="2"><b>DATA PROJECTS</b></font></span> (2023)
-</div>
-<dl>
-	<dt><b>HEXACO</b></dt>
-	<dd>We all know of the "big 5" trait analysis that is actively used with big data for marketing and influence platforms. HEXACO adds another factor to describe our traits; which is a person's motive to lie. Created by scientists here in Canada, it successfully addresses the weakest part of the Big 5.
-		<ul><li><a href="https://medium.com/@anda.vitols/how-to-spot-a-dishonest-person-the-role-of-honesty-humility-in-personality-c09e4fd06961blog">How to Spot a Dishonest Person: <font size = 1><i>The role of honesty-humility in personality</i></font></a></li>
-			<li><a href="https://medium.com/@anda.vitols/how-honest-are-you-about-your-religion-a-summary-of-chapter-8-of-the-h-factor-of-personality-837e00add55cblog">How Honest Are You About Your Religion?: <font size =1><i>A summary of chapter 8 of 'The H-Factor of Personality'</i></font></a></li>
-		</ul>
-	</dd>
 
-	<dt><b>Big 5 (aka OCEAN model)</b></dt>
-	<dd>In this set of analysis, I became the devil's advocate, and tried to <u>disprove</u> that we have 5 traits to describe our personality; because, on the surface, it seems like an arbitrary classification. Turns out, it is not happen-stance at all. I tried various <b>dimension reduction</b> methods, and the results <u>verify the strength</u> of these categories. The weakest correlation is now handled with the HEXACO extensione of Big5. </dd>
-	<dd>link: project summary</dd>
-
-	<dt><b>Happiness</b></dt>
-	<dd>How happy are people? Specifically, what living situations and other <u>demographic factors</u> seem to <u>correlate</u> with happiness?</dd>
-	<dd>link: project summary</dd>
-
-	<dt><b>Grocery shopping behaviour</b></dt>
-	<dd>IF Charlie purchases milk and eggs THEN it <u>is likely</u> that he will purchase cheese. This is called <b>Association analysis</b> and it answers  IF-THEN questions. A useful result from this type of analysis for management, is the visual tree that can be created, showing exactly how a decision is made. 
-	<dd>link: project summary</dd>
-
-</dl>
+<div><span style="color:rgb(11,83,148)"><font size="2"><b>R EXAMPLES OF INDIVIDUAL TECHNIQUES</b></font></span> (2019)
 </div>
 
-	
-<div style="border:solid green 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
-<dl>
-<dt><span style="color:rgb(11,83,148)"><font size="2"><b>DATA PROJECTS</b></font></span> (2019-2021)</dt>
-<dd><span style="color:rgb(106,168,79)"><b>Data for Good (NGO)</b></span>
-<ul>
-	<li><i>Volunteer Data Scientist</i> - <a href="https://waterloo.dataforgood.ca/">Data for Good - Waterloo Region <font size="1">(since 2018)</font></a></li>
-	<li><a href="https://drive.google.com/file/d/1LxAyuiRm0TSGnmmOLiS0FkI8ICvmE7wX/view?usp=share_link" target="_blank">House of Friendship <font size="1">(datathon 2019 - my report 2022)</font></a></li></ul>
+<div style="border:solid sandybrown 1.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<dl><dt><span style="color:rgb(106,168,79)"><i><b>Packages</b> Used in These Exercises</i></span></dt>
+	<dd>These exercises primarily focus on <b>R core packages</b> (automatically initialized)
+	<ul><li><b>base</b> = R Base package</li>
+	<li><b>datasets</b> = R Datasets package</li>
+	<li><b>graphics</b> = R Graphics package</li>
+	<li><b>grDevices</b> = R Graphics Devices and Support for Colours and Fonts</li>
+	<li><b>methods</b> = Formal Methods and Classes</li>
+	<li><b>stats</b> = R Stats package</li>
+	<li><b>utils</b> = R Utils package</li>
+</ul>
 </dd>
-
-
-<dd><span style="color:rgb(106,168,79)"><b>Exploratory Data Analysis Studies</b></span>
-<ul>
-<li><i>1) How are people using the internet?</i>
-	<ul><li><a href="https://docs.google.com/document/d/1zvdz94O21ehzg71YE7frnbFqXGkJLBfww2tNrRYDeG4/edit?usp=share_link" target="_blank">Social Networking Preferences <font size="1">(2019)</font></a></li>
-	<li><a href="https://docs.google.com/document/d/1FADG8PwEojrfombzvkmKgHdJ4zNZgrPV6fTH2BCa1E0/edit?usp=share_link" target="_blank">Google Search Preferences <font size="1">(2019)</font></a></li>
+<dd>Other packages used in these exercises
+	<ul><li><b>package::car</b> - Companion to Applied Regression</li>
+		<li><b>package::MASS</b> - Support Functions and Datasets for Venables and Ripley's MASS</li>
+		<li><b>package::psych</b> - Statistics for Psychology
+		<li><i>3D plotting packages</i>: <b>scatterplot3D</b> / <b>rgl</b> / <b>RColorBrewer</b></li>
 	</ul>
-</li>
+</dd>
+</dl>
+<span style="color:rgb(106,168,79)"><i><b>Datasets</b> Used in These Exercises</i></span>
+<table>
+	<tbody>
+		<tr>
+			<td>datasets::<b>cars</b><br>
+				datasets::<b>chickwts</b><br>
+				datasets::<b>HairEyeColor</b><br>
+				datasets::<b>InsectSprays</b><br>
+				datasets::<b>iris</b><br>
+				datasets::<b>lynx</b><br> 
+				datasets::<b>mtcars</b><br>
+				datasets::<b>quakes</b><br>
+				datasets::<b>sleep</b><br>
+				datasets::<b>state.area</b><br>
+				datasets::<b>swiss</b><br>
+				datasets::<b>Titanic</b><br>
+				datasets::<b>trees</b><br>
+				datasets::<b>USJudgeRatings</b><br>
+				datasets::<b>warpbreaks</b><br>
+				MASS::<b>Painters</b><br>
+				quantreg::<b>engel</b>
+			</td>
+			<td><div style="border:solid sandybrown 1.0pt;padding:.2in 0.2in 0.2in 0.2in">
+				datasets from packages<br>
+				imported datasets<br>
+				<i>manual data collection</i>: <b>Google Correlate</b>, <b>Google Search</b><br>
+				<i>manual data creation</i>: using random number generators
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
 
-<li><i>2) How are people being categorized?</i>
-	<ul><li><a href="https://drive.google.com/file/d/12DMVYKUuspGG1WhSobiwHtBn0h0t_kk_/view?usp=sharing" target="_blank">World Water Ski Championships: Analysis of Participants <font size="1">(2021)</font></a></li>
-	</ul>
+
+</div>
+
+<dl>
+<dt><b>DATA VISUALIZATION</b></dt>
+
+<dd><span style="color:rgb(106,168,79)"><i>Describing 1 Outcome Variable</i></span>
+<ul><li><a href="https://docs.google.com/document/d/1lc2-zIOT--h-COn_NVrpjgvuNhIiB4urU3P-RzcLlso/edit?usp=sharing" target="_blank">bar chart</a> categorical (<b>plot</b> |<b> barplot</b>) 
+	<ul><li><i>database</i>: <b>datasets::chickwts</b> - 71 observations of 2 variables-predictors</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1Alll7_VvK4oqS7nXWNxbTLRlTVDyjriGn4gUKx2j_Wk/edit?usp=sharing" target="_blank">pie chart</a> categorical (<b>pie</b> | <b>par)</b> 
+	<ul><li><i>database</i>: <b>datasets::chickwts</b> - 71 observations of 2 variables-predictors</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1dZWZoOiK3AgjVP30TeY9tbvsMAA3bVRtw2uS7YgnAcQ/edit?usp=sharing" target="_blank">histogram</a> quantitative (<b>hist</b> | <b>curve</b>) 
+	<ul><li><i>timeseries</i>: <b>datasets::lynx</b> - values 144 of observations</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1aHOQmNV2wD10z2OdTVeu-xSprWi673SFVpYTW3FBgo4/edit?usp=sharing" target="_blank">histogram overlay plots</a> quantitative (<b>hist</b> | <b>curve </b>| <b>line</b>)
+	<ul><li><i>database</i>: <b>datasets::swiss</b> - 47 observations of 7 variables-predictors</li>
+		<li><i>database</i>: <b>datasets::iris</b> - 150 observations of 5 variables</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1AMQVyjB242Kde8PUC9ZqknL8dD5ikoNLzG0rxOlxvdc/edit?usp=sharing" target="_blank">box plot</a> quantitative (<b>boxplot</b>) 
+	<ul><li><i>database</i>: <b>datasets::USJudgeRatings</b> - 43 observations of 12 variables-predictors</li></ul>
 </li>
 </ul>
 </dd>
 
-<dd><span style="color:rgb(106,168,79)"><b>Data Collection Research</b></span>
-	<ul><li>Report: <a href="02a_covid19.html">Vitols' COVID-19 Resources for Data Scientists <font size="1">(2020)</font></a>
-	</li></ul></dd>
+<dd><span style="color:rgb(106,168,79)"><i>Describing &amp; Comparing 2 Outcome Variables</i></span>
+<ul><li><a href="https://docs.google.com/document/d/1_KvDy2z-T1U8CLKCsp0kLQDIAUh52ZufB-Yq2tiNx-I/edit?usp=sharing" target="_blank">means bar chart</a>
+	<ul><li>IF bivariate association between predictor (6 categories-factors) and outcome (count-frequencies) THEN using barchart to compare group means</li>
+		<li><i>database</i> (like frequency table): <b>datasets::InsectSprays</b> - 72 observations of 2 variables</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1ffriFurUPvQ3LaLH0ij9CVDPiHIejsCHXcMJspQ8Wv0/edit?usp=sharing" target="_blank">group box plots</a>
+	<ul><li>IF several predictors on same quantitative outcome THEN grouped box plot</li>
+		<li><i>database</i> <b>MASS::painters</b> - 54 observations of 5 variables</li>
+		<li><i>database</i>: import <b>SearchData.csv</b> (Polson) - 51 observations of 1 variables (data from "<b>Google Correlate</b>" for search terms across states)</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1G5yeuBj_OFTLtG2ESz_vbDpcZKzVBnzvV57FlWP-omE/edit?usp=sharing" target="_blank">scatter plots</a>
+	<ul><li>IF relationship between 2 quantitative variables THEN scatterplots</li>
+		<li><i>database</i>: <b>datasets::cars</b> - 50 observations of 2 variables</li>
+		<li><i>package</i>: <b>car</b> (Companion to Applied Regression) for plotting tools</li></ul>
+</li>
+</ul>
+</dd>
 
+<dd><span style="color:rgb(106,168,79)"><i>Discovering, Describing &amp; Comparing Multiple (3+) Outcome Variables</i></span>
+<ul><li><a href="https://docs.google.com/document/d/1ZpmYEKqBpYJQn7pDcZrEtzw0MXmnOHtwfXMKEVKwZ5g/edit?usp=sharing" target="_blank">bar chart</a>
+	<ul><li>IF 3 variables (1 outcome frequency - 2 predictor variables) THEN clustered bar chart</li>
+		<li><i>table</i>: <b>datasets::warpbreaks</b> - 54 observations of 3 variables</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1PFFMa967Kr7OnZa8gevyZrIHKAzg9idoQu2AGfmvpS4/edit?usp=sharing" target="_blank">scatter plots</a>
+	<ul><li>IF 1 categorical, 2 quantitative variables THEN scatterplot for grouped data</li>
+		<li><i>database</i>: <b>datasets::iris</b> - 150 observtions of 5 variables</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1HhK8V2ePGo1KsGOKikKJRKUmgBB8Q91NkMQnDCDijFs/edit?usp=sharing" target="_blank">plot matrices</a>
+	<ul><li>IF look at association of several quantitative variables THEN scatterplot matrices</li>
+		<li><i>package</i>: <b>car</b></li>
+		<li><i>database</i>: <b>datasets::iris</b> - 150 observations of 5 varaibles</li>
+		<li><i>database</i>: import <b>Search.Data.csv</b> (polson) - 51 observations of 10 variables</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1u7mdQilmLk3tjFHayMPt5TP8dmCA9ibgqIucx1xS-nw/edit?usp=sharing" target="_blank">3D plots</a>
+	<ul><li>IF 3 variables THEN <b><i>3D scatterplot</i></b></li>
+		<li><i>packages</i>: <b>scatterplot3D</b> / <b>rgl</b> / <b>RColorBrewer</b></li>
+		<li><i>database</i>: <b>datasets::iris</b> - 150 observations of 5 variables</li></ul>
+</li>
+</ul>
+</dd>
 </dl>
 
-</div>
-<br>
-
-<div style="border:solid green 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
-
-<div><span style="color:rgb(11,83,148)"><font size="2"><b>R EXAMPLES OF INDIVIDUAL TECHNIQUES</b></font></span>
-</div>
 <dl>
-<dt>1 variable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>(describing 1 variable)</i><br>
-</dt>
-<dd>charts
-<ul><li><a href="https://docs.google.com/document/d/1lc2-zIOT--h-COn_NVrpjgvuNhIiB4urU3P-RzcLlso/edit?usp=sharing" target="_blank">bar chart</a> categorical (<b>plot</b> |<b> barplot</b>)<br>
+<dt><b>DATA STATISTICS</b></dt>
+<dd><span style="color:rgb(106,168,79)"><i>Describing 1 Outcome Variable</i></span>
+<ul><li><a href="https://docs.google.com/document/d/1Azj-au4wFmEekx1Ahl-tvFc0c_Xf8fnQAH0mvYBG4iU/edit?usp=sharing" target="_blank">frequencies</a> categorical (<b>table</b> | <b>prop.table</b>)
+	<ul><li><i>table</i>: google search frequencies-outcome by category-predictor</li></ul>
 </li>
-<li><a href="https://docs.google.com/document/d/1Alll7_VvK4oqS7nXWNxbTLRlTVDyjriGn4gUKx2j_Wk/edit?usp=sharing" target="_blank">pie chart</a> categorical (<b>pie</b> | <b>par)</b><br>
+<li><a href="https://docs.google.com/document/d/1JXoXjRpeiAUm3nxDp37eSpiQ0Vnnz0kb38zPRTiJrwE/edit?usp=sharing" target="_blank">descriptive summaries</a> quantitative (<b>summary</b> | <b>fivenum</b> | <b>boxplot.stats</b> | <b>psych::describe</b>)
+	<ul><li><i>database</i>: <b>datasets::cars</b> - 50 observations of 2 variables</li>
+		<li><i>database</i>: <b>datasets::mtcars</b> - 32 observations of 11 variables</li></ul>
 </li>
-<li><a href="https://docs.google.com/document/d/1dZWZoOiK3AgjVP30TeY9tbvsMAA3bVRtw2uS7YgnAcQ/edit?usp=sharing" target="_blank">histogram</a> quantitative (<b>hist</b> | <b>curve</b>)<br>
+<li><a href="https://docs.google.com/document/d/1gbpIy0Xs4HiUeQ1c5tfMWflhwzy60dpwurNr30-6y7w/edit?usp=sharing" target="_blank">inferential proportion tests</a> quantitative (<b>prop.test</b>)
+	<ul><li>single proportion hypothesis test and confidence interval</li>
+		<li>infer by: compare a teams winning average to a result by chance (50%)</li></ul>
 </li>
-<li><a href="https://docs.google.com/document/d/1aHOQmNV2wD10z2OdTVeu-xSprWi673SFVpYTW3FBgo4/edit?usp=sharing" target="_blank">histogram overlay plots</a> quantitative (<b>hist</b> | <b>curve </b>| <b>line</b>)<br>
+<li><a href="https://docs.google.com/document/d/1on9FOWWehhGp_qAzAzD_k6zDn6h7epNKFHpci1hPong/edit?usp=sharing" target="_blank">inferential means t-tests</a> quantitative (<b>t.test</b>)
+	<ul><li>single mean hypothesis test & confidence interval - done on 1 variable-predictor</li>
+		<li><i>database</i>: <b>datasets::quakes</b> - 1000 observations of 5 variables-predictors</li></ul>
 </li>
-<li><a href="https://docs.google.com/document/d/1AMQVyjB242Kde8PUC9ZqknL8dD5ikoNLzG0rxOlxvdc/edit?usp=sharing" target="_blank">box plot</a> quantitative (<b>boxplot</b>)<br>
-</li>
-</ul>
-</dd>
-<dd>statistics
-<ul><li><a href="https://docs.google.com/document/d/1Azj-au4wFmEekx1Ahl-tvFc0c_Xf8fnQAH0mvYBG4iU/edit?usp=sharing" target="_blank">frequencies</a> categorical (<b>table</b> | <b>prop.table</b>)<br>
-</li>
-<li><a href="https://docs.google.com/document/d/1JXoXjRpeiAUm3nxDp37eSpiQ0Vnnz0kb38zPRTiJrwE/edit?usp=sharing" target="_blank">descriptive summaries</a> quantitative (<b>summary</b> | <b>fivenum</b> | <b>boxplot.stats</b> | psych <b>describe</b>)<br>
-</li>
-<li><a href="https://docs.google.com/document/d/1gbpIy0Xs4HiUeQ1c5tfMWflhwzy60dpwurNr30-6y7w/edit?usp=sharing" target="_blank">inferential proportion tests</a> quantitative (<b>prop.test</b>)<br>
-</li>
-<li><a href="https://docs.google.com/document/d/1on9FOWWehhGp_qAzAzD_k6zDn6h7epNKFHpci1hPong/edit?usp=sharing" target="_blank">inferential means t-tests</a> quantitative (<b>t.test</b>)<br>
-</li>
-<li><a href="https://docs.google.com/document/d/1sPvr8P9NUQqq5kgVCUknx5R4_qE3x9pMV17fZLZZAPs/edit?usp=sharing" target="_blank">inferential chi square tests</a> categorical (<b>chisq.test</b> | <b>margin.table</b>)<br>
-</li>
-<li><a href="https://docs.google.com/document/d/1cRERzxYi7HL7jvXUa30T1snX2tUNdseqUfBmQUV8Knw/edit?usp=sharing" target="_blank">uni-variate tests</a>: data that does not fit into assumptions of test (<b>median</b> | <b>mean</b> - <b>trim</b> | <b>sd</b> | <b>mad</b> | <b>IQR</b>&nbsp; | <b>fivenum</b> ) <br>
+<li><a href="https://docs.google.com/document/d/1sPvr8P9NUQqq5kgVCUknx5R4_qE3x9pMV17fZLZZAPs/edit?usp=sharing" target="_blank">inferential chi square tests</a> categorical (<b>chisq.test</b> | <b>margin.table</b>) 
+	<ul><li>1-sample, goodness-of-fit test (one outcome - from 3 predictors)</li>
+	<li><i>table</i>: <b>datasets::HairEyeColor</b> - 3 dimensions x factors for each</li></ul>
 </li>
 </ul>
 </dd>
-<dt>2 variables&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> (describing &amp; comparing 2 variables)</i><br>
-</dt>
-<dd>charts
-<ul><li><a href="https://docs.google.com/document/d/1_KvDy2z-T1U8CLKCsp0kLQDIAUh52ZufB-Yq2tiNx-I/edit?usp=sharing" target="_blank">means bar chart</a><br>
-</li>
-<li><a href="https://docs.google.com/document/d/1ffriFurUPvQ3LaLH0ij9CVDPiHIejsCHXcMJspQ8Wv0/edit?usp=sharing" target="_blank">group box plots</a><br>
-</li>
-<li><a href="https://docs.google.com/document/d/1G5yeuBj_OFTLtG2ESz_vbDpcZKzVBnzvV57FlWP-omE/edit?usp=sharing" target="_blank">scatter plots</a><br>
-</li>
-</ul>
-</dd>
-<dd>statistics
+
+<dd><span style="color:rgb(106,168,79)"><i>Describing &amp; Comparing 2 Outcome Variables</i></span>
 <ul><li><a href="https://docs.google.com/document/d/1HZ7lvIM6G2tZf0tRERBJtGYLtMBlQWA0-hJV6pCLPHE/edit?usp=sharing" target="_blank">correlations</a></li>
-<li><a href="https://docs.google.com/document/d/10r3dwoNUfzmqgRDKvXYYEx_lys0G_-dG0XOwd4ZlNrg/edit?usp=sharing" target="_blank">bivariate regression</a><br>
+	<ul><li>IF relationship between 2 quantitative variables THEN <b><i>correlation coefficient</i></b></li>
+		<li><i>database</i>: <b>datasets::swiss</b> - 47 observationas of 6 variables</li></ul>
+<li><a href="https://docs.google.com/document/d/10r3dwoNUfzmqgRDKvXYYEx_lys0G_-dG0XOwd4ZlNrg/edit?usp=sharing" target="_blank">bivariate regression</a>
+	<ul><li>IF one variable <u>predicts</u> outocme of second varaible THEN association statistic (<b><i>linear regression</i></b>)</li>
+		<li><i>database</i>: <b>datasets::trees</b> - 31 observations of 3 variables</li></ul>
 </li>
-<li><a href="https://docs.google.com/document/d/1I9z0H97hn-WpoFXuw-gCRO9UUniLk2L1E1XcQuqs57A/edit?usp=sharing" target="_blank">means t-test</a><br>
+<li><a href="https://docs.google.com/document/d/1I9z0H97hn-WpoFXuw-gCRO9UUniLk2L1E1XcQuqs57A/edit?usp=sharing" target="_blank">means t-test</a>
+	<ul><li>IF compare means of 2 groups (quantitative variables) THEN <b><i>independent 2-group t-test</i></b></li>
+		<li><i>database</i>: <b>datasets::sleep</b> - 20 observations of 3 variables</li></ul>
 </li>
-<li><a href="https://docs.google.com/document/d/1gTnc5tm4OrVm3Y-kJHmaNRz1pNJGRwgueK7IRXMn-lQ/edit?usp=sharing" target="_blank">paired means t-test</a><br>
+<li><a href="https://docs.google.com/document/d/1gTnc5tm4OrVm3Y-kJHmaNRz1pNJGRwgueK7IRXMn-lQ/edit?usp=sharing" target="_blank">paired means t-test</a>
+	<ul><li>IF comapre means of one group, before and after intervention THEN <b><i>paired t-tests</i></b></li>
+		<li><i>datasets</i>: create random number datasets -> do intervention on that dataset to create the other dataset</li></ul>
 </li>
-<li><a href="https://docs.google.com/document/d/1u-f5jwWY_nXc11VFoPE_xOtR5LRo0lS4nM7dtDfXbyI/edit?usp=sharing" target="_blank">means ANOVA</a><br>
+<li><a href="https://docs.google.com/document/d/1u-f5jwWY_nXc11VFoPE_xOtR5LRo0lS4nM7dtDfXbyI/edit?usp=sharing" target="_blank">means ANOVA</a>
+	<ul><li>IF compare mewns o one dimension on many groups THEN on-way <b><i>one-factor ANOVA</i></b> (analysis of variance)</li>
+		<li><i>datasets</i>: create random data for 4 groups (same N and std dev, different means)</li></ul>
 </li>
-<li><a href="https://docs.google.com/document/d/1Nxy7yAaTQDYTfVz3R_RFk-WOmfNaQe47-xbBu887TGs/edit?usp=sharing" target="_blank">proportions</a></li>
-<li><a href="https://docs.google.com/document/d/1AwwB9VwJ1OQs_bdD03Eg7zjjvBg6YTvTbwhKEzwfT00/edit?usp=sharing" target="_blank">categorical: cross tabs</a><br>
+<li><a href="https://docs.google.com/document/d/1Nxy7yAaTQDYTfVz3R_RFk-WOmfNaQe47-xbBu887TGs/edit?usp=sharing" target="_blank">proportions</a>
+	<ul><li>IF compare proportions of 2 groups THEN <b>prop.test</b></li>
+		<li><i>datasets</i>: manual</li>
+		<li><i>database</i>: import <b>mlb2011.csv</b> (polson)</li></ul>
 </li>
-<li><a href="https://docs.google.com/document/d/1stok3wGuZ1R9nv3h9EJicSl8L-opOYlCvryPvRkAtjE/edit?usp=sharing" target="_blank">bivariate tests<br>
-</a></li>
+<li><a href="https://docs.google.com/document/d/1AwwB9VwJ1OQs_bdD03Eg7zjjvBg6YTvTbwhKEzwfT00/edit?usp=sharing" target="_blank">categorical: cross tabs</a>
+	<ul><li>IF tablualte across many dimensions THEN crosstabs for categorical variables. (Narrow down to 2 dimensions > <b><i>Chi-square test for indepenence</i></b>)</li>
+		<li><i>dataset</i>: table <b>datasets::Titanic</b> - 4 dimensions</li></ul>
+</li>
 </ul>
 </dd>
-<dt>3 + variables&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> (discovering, describing &amp; comparing multiple variables)</i><br>
-</dt>
-<dd>charts
-<ul><li><a href="https://docs.google.com/document/d/1ZpmYEKqBpYJQn7pDcZrEtzw0MXmnOHtwfXMKEVKwZ5g/edit?usp=sharing" target="_blank">bar chart</a><br>
+
+<dd><span style="color:rgb(106,168,79)"><i>Discovering, Describing &amp; Comparing Multiple (3+) Outcome Variables</i></span>
+<ul><li><a href="https://docs.google.com/document/d/1G-eYSkMksVx0yTO3U3k6DzJXusdq-RYqFmIgpy7X02Q/edit?usp=sharing" target="_blank">regression</a>
+	<ul><li>IF several varaibles to predict scores on single outcome varaible THEN compute <b><i>mutiple regression</i></b></li>
+		<li><i>database</i>: <b>datasets::USJudgeRatings</b> - 34 observations of 12 variables</li></ul>
 </li>
-<li><a href="https://docs.google.com/document/d/1PFFMa967Kr7OnZa8gevyZrIHKAzg9idoQu2AGfmvpS4/edit?usp=sharing" target="_blank">scatter plots</a><br>
+<li><a href="https://docs.google.com/document/d/1agjQgREzMVTiDtxXf8YWFqo8ZbdWAzcuYPh6JkG31BY/edit?usp=sharing" target="_blank">2 factor ANOVA</a>
+	<ul><li>IF 2 categorical predictor variables, 1 quantitative outcome THEN <b><i>2-factor ANOVA</i></b></li>
+		<li><i>database</i>: datasets::<b>warpbreaks</b> - 54 observations of 3 variables</li></ul>
 </li>
-<li><a href="https://docs.google.com/document/d/1HhK8V2ePGo1KsGOKikKJRKUmgBB8Q91NkMQnDCDijFs/edit?usp=sharing" target="_blank">plot matrices</a><br>
+<li><a href="https://docs.google.com/document/d/1IM3tTnt-pjC9rh0G9d-HS_MGBk02QGhjPrO7yo-MDS0/edit?usp=sharing" target="_blank">clusters</a>
+	<ul><li>IF grouping observations, based on similarities of variables THEN <b><i>clustering</i></b></li>
+		<li>3 major types of clustering
+			<ul><li><b><i>split</i></b>: into number of clusters (<b>k-means</b>)</li>
+				<li><b><i>hierarchical</i></b>: start seperate > combine</li>
+				<li><b><i>divide</i></b>: start single > split</li></ul>
+		<li><i>database</i>: <b>datasets::mtcars</b> - 32 observations of 11 variables</li>
+		<li><i>database</i>: import <b>StateClusterData.csv</b> (polson) - google search data</li>
+	</li></ul>
 </li>
-<li><a href="https://docs.google.com/document/d/1u7mdQilmLk3tjFHayMPt5TP8dmCA9ibgqIucx1xS-nw/edit?usp=sharing" target="_blank">3D plots</a><br>
+<li><a href="https://docs.google.com/document/d/1P7zZhaVPnSa_NeWk53jAacbmOnxRHlwIV2op82P_JCs/edit?usp=sharing" target="_blank">principle component factors</a>
+	<ul>
+		<li>If looking for most significant predictors THEN
+			<ul>
+				<li><b><i>principle components</i></b> = components as result of varaibles</li>
+				<li><b><i>factor analysis</i></b> = variables as result of factor</li></ul>
+		<li><i>database</i>: <b>datasets::mtcars</b> - 32 observations of 11 variables</li>
+	</ul>
 </li>
 </ul>
 </dd>
-<dd>statistics
-<ul><li><a href="https://docs.google.com/document/d/1G-eYSkMksVx0yTO3U3k6DzJXusdq-RYqFmIgpy7X02Q/edit?usp=sharing" target="_blank">regression</a></li>
-<li><a href="https://docs.google.com/document/d/1agjQgREzMVTiDtxXf8YWFqo8ZbdWAzcuYPh6JkG31BY/edit?usp=sharing" target="_blank">2 factor ANOVA</a><br>
+</dl>
+
+<dl>
+<dt><b>STATISTICS FOR ROBUST DATA</b></dt>
+<dd><span style="color:rgb(106,168,79)"><i>Procedures resistant to outliers and non-normal distributions</i></span>
+<ul>
+<li><a href="https://docs.google.com/document/d/1cRERzxYi7HL7jvXUa30T1snX2tUNdseqUfBmQUV8Knw/edit?usp=sharing" target="_blank">uni-variate tests</a>: IF data that does not fit into assumptions of test THEN robust uni-variate tests 
+	<ul><li>(<b>median</b> | <b>mean</b> - <b>trim</b> | <b>sd</b> | <b>mad</b> | <b>IQR</b>&nbsp; | <b>fivenum</b> )</li> 
+	<li><i>database</i>: "US States Facts and Figures" <b>datasets::state.area</b> - highly skewed with outliers</li></ul>
 </li>
-<li><a href="https://docs.google.com/document/d/1IM3tTnt-pjC9rh0G9d-HS_MGBk02QGhjPrO7yo-MDS0/edit?usp=sharing" target="_blank">clusters</a></li>
-<li><a href="https://docs.google.com/document/d/1P7zZhaVPnSa_NeWk53jAacbmOnxRHlwIV2op82P_JCs/edit?usp=sharing" target="_blank">principle component factors</a><br>
+<li><a href="https://docs.google.com/document/d/1stok3wGuZ1R9nv3h9EJicSl8L-opOYlCvryPvRkAtjE/edit?usp=sharing" target="_blank">bivariate tests</a>
+	<ul><li>IF data that does not fit into assumptions of test THEN robust bi-variate tests</li>
+		<li>packages: <b>robust</b> / <b>robustbase</b> / <b>MASS</b> / <b>quantreg</b></li>
+		<li><i>database</i>: <b>quantreg::engel</b> - 235 observations of 2 variables</li></ul>
 </li>
 </ul>
 </dd>
 
 </dl>
+
+<hr>
 
 
 <div style="border:solid sandybrown 1.0pt;padding:.2in 0.2in 0.2in 0.2in">
-<div><span style="color:rgb(11,83,148)"><font size="2"><b>DATA CLEANING &amp; MODIFYING</b></font></span>
+<div><span style="color:rgb(11,83,148)"><font size="2"><b>R EXAMPLES: PREPARING DATA</b></font></span> (2019)
 </div>
 
 <dl>
-<dt><b>Working with Data Files</b></dt>
+<dt><b>Data Wrangling</b></dt>
 <dd>getting started:
 <ul>
 <li><a href="https://docs.google.com/document/d/1VPmBsjVJ0U6V7qUmt8-PxEzUEHxf0Cd5JBAk7mQk9z0/edit?usp=sharing" target="_blank">built in data sets</a><br>
@@ -223,12 +309,140 @@
 </li>
 </ul>
 </dd>
+<dt><b>Working with Colour</b></dt>
+<dd>
+<ul><li><a href="">using R's built-in colour tools</a></li>
+	<li><a href="">using <b>package::ColorBrewer</b></a></li>
+	<li><a href="">R colour examples</a></li>
+</ul>
+</dd>
+
+
 </dl>
 
 </div>
 </div>
-	
+
 <br>
+
+
+<div style="border:solid green 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
+	<span style="color:rgb(11,83,148)"><font size="2"><b>DATA PROJECTS</b></font></span> (2019-2023)
+<dl>
+<dt><span style="color:rgb(106,168,79)"><i>Data for Good (NGO)</i></span></dt>
+<dd>
+<ul>
+	<li><i>Volunteer Data Scientist</i> - <a href="https://waterloo.dataforgood.ca/">Data for Good - Waterloo Region <font size="1">(since 2018)</font></a></li>
+	<li><a href="https://drive.google.com/file/d/1LxAyuiRm0TSGnmmOLiS0FkI8ICvmE7wX/view?usp=share_link" target="_blank">House of Friendship <font size="1">(datathon 2019 - my report 2022)</font></a></li></ul>
+</dd>
+
+<dt><span style="color:rgb(106,168,79)"><i>How are people using the internet?</i></span></dt>
+<dd>
+	<ul>
+		<li><a href="https://docs.google.com/document/d/1zvdz94O21ehzg71YE7frnbFqXGkJLBfww2tNrRYDeG4/edit?usp=share_link" target="_blank">Social Networking Preferences <font size="1">(2019)</font></a></li>
+	<li><a href="https://docs.google.com/document/d/1FADG8PwEojrfombzvkmKgHdJ4zNZgrPV6fTH2BCa1E0/edit?usp=share_link" target="_blank">Google Search Preferences <font size="1">(2019)</font></a></li>
+	</ul>
+</dd>
+
+<dt><span style="color:rgb(106,168,79)"><i>Data Collection Research</i></span></dt>
+	<dd>
+	<ul>
+		<li>Report: <a href="02a_covid19.html">Vitols' COVID-19 Resources for Data Scientists <font size="1">(2020)</font></a></li>
+	</ul>
+	</dd>
+
+<dt><span style="color:rgb(106,168,79)"><i>How happy are people?</i></span></dt>
+	<dd>
+	<ul>
+		<li>Specifically, what living situations and other <u>demographic factors</u> seem to <u>correlate</u> with happiness?</li>
+	<li><a href="">A Data Analysis about Happiness <font size="1">(2023)</font></a></li>
+	</ul>
+	</dd>
+
+<dt><span style="color:rgb(106,168,79)"><i>Trait Anlaysis: The personality scales Big5, HEXACO, Dark3</i></span></dt>
+<dd>Big 5 (aka OCEAN model)
+	<ul>
+	<li>Why is personality divided into 5 dimensions? It seems like an arbitrary classification. Turns out, it is not happen-stance at all! I conducted various <b>dimension reduction</b> methods, and the results <u>verify the strength</u> of these categories. The weakest correlation is now handled with the HEXACO extension of Big5. </li>
+	<li><a href="">The Data Science Behind the Big 5 Personality Inventory <font size="1">(2023)</font></a></li>
+	</ul>
+	</dd>
+<dd>HEXACO
+	<ul>
+	<li>"Big Five" is a trait analysis tool used with big data for marketing and influence platforms. HEXACO adds another dimension to describe our traits. This dimension checks a person's motive to lie. This successfully addresses the weakest part of the original Big Five Scale.</li>
+	<li><a href="https://medium.com/@anda.vitols/how-to-spot-a-dishonest-person-the-role-of-honesty-humility-in-personality-c09e4fd06961blog">How to Spot a Dishonest Person: <font size = 1><i>The role of honesty-humility in personality</i> (2023)</font></a></li>
+	<li><a href="https://medium.com/@anda.vitols/how-honest-are-you-about-your-religion-a-summary-of-chapter-8-of-the-h-factor-of-personality-837e00add55cblog">How Honest Are You About Your Religion?: <font size =1><i>A summary of chapter 8 of 'The H-Factor of Personality'</i> (2023)</font></a></li>
+	</ul>
+	</dd>
+</dl>
+</div>
+
+
+<br>
+<div style="border:solid green 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<span style="color:rgb(11,83,148)"><font size="2"><b>R EXAMPLES OF INDIVIDUAL TECHNIQUES</b></font></span> (2023)<br>
+Here I explored tidyverse, piping and other tools that have become more intuitive and efficient for wrangling tasks. I also delve deeper into modeling and mining. R is now fully integrated with non-proprietory apps, as well as having a whole set of publishing apps for docuemnts and applicaiton creation. 
+
+<dl>
+<dt>DATA WRANGLING</dt>
+	<dd><span style="color:rgb(106,168,79)"><i>Import and save data files</i></span>
+		<ul><li><a href="">import data</a></li></ul>
+	</dd>
+	<dd><dd><span style="color:rgb(106,168,79)"><i>Data Preperatione</i></span>
+		<ul><li><a href="">wrangling data</a></li>
+			<li><a href="">recoding data</a></li></ul>
+		</dd>
+
+<dd><br></dd>
+<dt>DESCRITPIVE DATA ANALYSIS - looking at data</dt>
+	<dd>
+		<ul><li><a href="">visualizing data</a></li>
+		<li><a href="">statistically describing and exploring data</a></li></ul>
+	</dd>
+
+<dd><br></dd>
+<dt>DATA MODELING</dt>
+	<dd>
+		<ul><li><b><i>inferences</i></b>: <a href="">analyzing data</a></li>
+		<li><b><i>regressions</i></b>: <a href="">predicting outcomes</a></li></ul>
+	</dd>
+
+<dd><br></dd>
+<dt>DATA MINING - finding patterns in the noise</dt>
+<dd><span style="color:rgb(106,168,79)"><i>databases</i></span>
+	<ul><li>mining variables 
+		<ul><li>which dimensions have most impact on data pattern?</li>
+			<li><a href="">dimesnions redcution methods</a></li>
+			</ul>
+		</li></ul>
+	<ul><li>mining cases
+		<ul><li>looking for similarities in observations</li>
+			<li><a href="">case grouping methods</a></li>
+			<li><a href="">case classification methods</a></li>
+			</ul>
+	</li></ul>
+	<ul><li>mining associations
+		<ul><li>looking for behavioural associations: IF someone buys this THEN they likely will buy that</li>
+			<li><a href="">assocaition analysis</a></li></ul>
+	</li></ul>
+</dd>
+
+<dd><span style="color:rgb(106,168,79)"><i>time series datasets</i></span>
+	<ul><li><a href="">time series analysis</a>: how data changes over time
+		<li>IF there was an intervention THEN did expected change happen?</li>
+		<li>IF there is a change over time THEN can the data expalin why that happened?</li>
+	</ul>
+</dd>
+
+<dd><span style="color:rgb(106,168,79)"><i>text datasets</i></span>
+	<ul><li><a href="">sentiment analysis</a></li>
+		<li>first look at text analysis with prompt engineering (natural language processing) and R wrangling</li>
+	</ul>
+</dd>
+
+</dl>
+
+</div>
+
 <a href="index.html">back home</a>
 
 </font>
