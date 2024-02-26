@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>Anda's IT Library - Using R</title>
+        <meta name="description" content="Anda Vitols' IT Library" />
+        <meta http-equiv="author" content="Anda Vitols" />
+        <style type="text/css">
+            body {
+                font-family: arial, Verdana, sans-serif;
+                background-color: rgb(185,179,175);}
+        </style>
+    </head>
+
+<body>
+
+<center>
+<span style="font-family:arial,sans-serif; color:rgb(11,83,148)" ><font size="6"><b>ANDA'S IT LIBRARY</b></font></span>
+<div style="text-align:center"><b><span style="color:rgb(11,83,148)"><font size="3"><i>DATA SCIENCE USING R</i></font></span></b></div>
+</center>
+
+<center>
+    <table width = "700" bgcolor="FFFFFF">
+        <tbody>
+            <tr>
+                <td>
+<font size="2">
+
+<br>
+
+<div style="border:solid green 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<p>R is a <dfn>functional</dfn> programming language with <dfn>object-orientated</dfn> abilities, designed for calculating <dfn>statistics</dfn>, using <dfn>vectors</dfn>.
+The combination of the above attributes, result in a lean, intuitive way to script statisitcal analysis.</p>
+<p>R is <dfn>open source</dfn>, growing in every dimension, further accomodating Big data and Machine Learning calculations, lean distribution of results, and integration with other computer platforms.</p>
+<p>Finally, R is fun!</p>
+
+<div style="border:solid sandybrown 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<p><b>START HERE:</b><br>
+Today <a href="https://posit.co/"><dfn>RStudio</dfn> (Posit)</a> IDE & <a href= "https://www.tidyverse.org/"><dfn>Tidyverse</dfn></a> apps are goto foundation to start any project. </p>
+
+<p><b>RStudio IDE</b> has 4 panels for scripting, showing computations, looking at data structures, and finally, resources and outputs. These panels are context-driven, depending on what application you are scripting with. RStudio IDE can also be used with non-R apps, such as Python and scripting for websites (HTML, CSS, Javascript etc). </p>
+
+<p><b>Tidyverse</b> is a <dfn>R app</dfn> that is intended to make both computers and humans happy. 
+Tidyverse creates data frames that are perfect for <dfn>computational statistics</dfn>. They are called <dfn><b>“tibbles”</b></dfn>, which are long and skinny dataframes, created from real-world data such as table summaries or features from databases. 
+Tidyverse also has scripting syntax that uses a <dfn><b>“pipe”</b></dfn>, a connection symbol, that allows humans to type procedures in <dfn>time-logical order</dfn>. This happens -and then- that happens -and then- the other happens… This is in contrast to the <dfn>nested</dfn> way that programming usually is scripted, which resembles the architecture of data being used. </p>
+
+</div>
+
+<br>
+<div style="border:solid sandybrown 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<b>R is the tool used to analyse data.</b> This is done in 3 parts
+<ol><li>Gathering and preparing data for analysis</li>
+<li>Doing the analysis</li>
+<li>Reporting results from the analysis</li>
+</ol>
+
+<dl>
+    <dt>part 1: GATHERING AND PREPARING DATA FOR ANALYSIS</dt>
+    <dd><u>Purpose</u>: to get a clean dataset loaded into the R workspace</dd>
+    <dd><u>Step1</u>: load real-word datasets into workspace </dd>
+    <dd><u>Step2</u>: <dfn><b>“split-apply-combine”</b></dfn> 
+        <ul><li>
+    A foundational data-wrangling procedure, coined by <i><u>Hadley Wickham</u></i> author of <i>Tidyverse</i> and the <i>tibble</i>. It means that we split off just the data we want from real-world collections, apply fixes to the datasets so it can be combined with other datasets, to create a dataframe that statistical computers like. </li></ul>
+    </dd>
+
+    <dd><br></dd>
+    <dt>part 2: DOING THE ANALYSIS</dt>
+    <dd><u>Purpose</u>: an interactive process to understand what the data is saying, and then perhaps, acting on it. 
+        <ul>
+            <li><i>Understanding what data is saying</i> - By looking at its patterns, or finding mathematical equations that describe it. </li>
+            <li><i>Acting on it</i> - Processing data further, by perhaps creating new variables from existing variables. (e.g. creating rates of change), comparing data to other data (e.g. compare to other datasets, or mathematical distributions), or predicting how data will change in future. </li>
+        </ul>
+    </dd>
+
+<dd><br></dd>
+<dt>part3: REPORTING RESULTS FORM ANALYSIS
+    <dd><u>Purpose</u>: Reports from data analysis can be published as whitepaper, infographics, and dashboards. Reports are usually written for private use, while infographics and dashboards are great for public consumption. </dd>
+    <dd><u>Report types</u>
+        <ul>
+        <li><b><dfn>Infographics</dfn></b>: data summarised into blocks on a poster (online | billboard | handout)</li>
+        <li><b><dfn>Descriptive statistical plot</dfn></b>: (online | poster | report)</li>
+        <li><b><dfn>Statistical test results</dfn></b>: look like gobbledigook, requiring translation into human readable form. </li>
+        </ul>
+    </dd>
+    <dd><u>Dashboard</u> (Shiny)
+    <ul><li>Dashboards are online posters. They give a quick summary of data in a way that is understandable to humans. A dashboard can be designed as an infographic or a standalone plot. An infographic is a poster sectioned into blocks containing summarised results, while a standalone plot has legends and labels explaining what the graph is about. </li>
+    <li><u>Dashboard types</u>: 
+        <ul><li><b><i>View only</i></b> (static | realtime changing data)</li>
+        <li><b><i>Interactive</i></b> (interactive static data | interactive dynamic data)</li></ul>
+    </li>
+    </ul>
+    </dd>
+
+</dl>
+
+</div>
+</div>   
+
+<br>
+
+<div style="border:solid green 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
+
+<div style="text-align:center"><b><span style="color:rgb(11,83,148)"><font size="3">DETAILS</font></span></b></div>
+<br>  
+<b>HOW TO USE R FOR STATISTICAL & DATA ANALYSIS</b><br>
+<dl>
+    <dt>HOW DATA WORKS</dt>
+        <dd>variable types
+            <ul><li><b><dfn>continuous</dfn></b> v <b><dfn>categorical</dfn></b></li>
+                <li>other: <b><dfn>time data</dfn></b> | <b><dfn>string data</dfn></b></li></ul>
+            </dd>
+        <dd>variable distribution types: <b><dfn>parametric</dfn></b> v <b><dfn>non-parametric</dfn></b> (ranking order sets)</dd>
+    <dt>HOW R WORKS</dt>
+        <dd>R is <b><dfn>vector-based</dfn></b> - so all data must convert to vector-format to be computed
+            <ul><li><b><dfn>scalar</dfn></b> converts to vector in calculation</li>
+            <li><b><dfn>matrices</dfn></b> & <b><dfn>dataframes</dfn></b> have same length rows/cols - matrices are all same data type, while dataframe can have many datatypes</li>
+            <li><b><dfn>list</dfn></b> contains variables of many types and lengths - e.g. a customer profile & an <b><dfn>array</dfn></b> is a list of lists</li>
+        </ul>
+    </dd>
+        <dd>function process: take an object - do something to object - return an object</dd>
+    <dt>MY FUNCTIONS</dt>
+        <dd><u>about</u>: Creat my own functions for repetative tasks</dd>
+        <dd><u>why</u>: It creates consistency in my programming analysis thought process</dd>
+</dl>
+
+<div style="border:solid sandybrown 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<b>MODELING & DATA MINING</b>
+<p>Once we have an idea of what our data is about, we can use computer modeling techniques for analysis. Computer procedures are based on mathematica of statistical modeling, or the mathematics of computer sorting procedures. There are many applications, and all are <dfn>iterative processes</dfn> to grow an information structure based on previous information.</p>
+
+<p>Key similarities in modeling procesres, is the use of <dfn>training</dfn> and <dfn>test</dfn> datasets. Training datasets creates the mathematical model describing data, while test datasets see if the model can generalize. ie. be relevant to other similar data. The other key similariy is that there is extra error analysis on how confident we are that the model described what we wanted it too.</p>
+
+<dl>
+    <dt>modeling considerations</dt>
+    <dd><ul>
+        <li>learning types: <b><dfn>supervised</dfn></b> (regression | categorizing) v <b><dfn>unsupervised</dfn></b></li>
+        <li>model dataset preperations for "big data"</li>
+        <li>model error analaysis, and our confidence in it</li>
+    </ul></dd>
+</dl>
+<center>
+<img src="images/algoRhythm.png" width = "400" height = "140" border="0">
+</center>
+</div>
+
+<br>
+<div style="border:solid sandybrown 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<b>R FOR PSYCHOLOGY</b>
+<dl>
+    <dt><a href="05a_psychpkg.html">Personality Project & <b>psych</b> package.</a> <u>Revelle</u></dt>
+    <dd><ol><li>constructing psychometrics</li>
+        <li>constructing personality studies</li>
+        <li>using <b>psych</b> package</li></ol>
+    </dd>
+    <dt>Using R & tidyverse for psychology studies. <u>Navarro</u></dt>
+    <dd>Books
+        <ul><li>Book: Introduction to R <u>Navarro</u></li>
+            <li>Book: R for Psychology <u>Navarro</u></li></ul>
+        </dd>
+    <dd>Data collection for psychology experiments - javascript apps
+        <ul><li><b>jPsych app</b> - collecting data for traditional psychological experiments</li> 
+            <li><b>jaysire app</b> <u>Navarro</u> - combines jpsych and R strengths</li>
+        </ul></dd>
+    <dd>Simulations - cognitive & learning psychology
+        <ul><li>Rescola-Wagner model in R - learning rft patterns</li>
+            <li><a href="16_cognition.html">Cognitive architecture</a> -> Deep & Reinforcement Learning (ML)</li>
+        </ul></dd>
+</dl>
+
+</div>
+</div>
+
+<br>
+
+
+<div style="border:solid green 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<div style="text-align:center"><b><span style="color:rgb(11,83,148)"><font size="3">WORKFLOWS</font></span></b></div>
+<br>
+
+<span style="color:rgb(11,83,148)"><b>R ANALYSIS WORKFLOWS</b></span><br>
+
+<div>
+    <center>
+<img src="images/data-science-model.svg" width = "250"><br>
+<img src="images/modeling-process.svg" width = "600"><br>
+<br>
+<img src="images/r-workflow_CS.jpg" width = "600">
+</center>
+</div>
+
+<div style="border:solid sandybrown 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<div>
+<span style="color:rgb(11,83,148)"><b>DATA OPS WORKFLOW</b></span><br>  
+<center>
+<img src="images/dataops-roles1.png" width="500"> <br>
+</center>
+<span style="color:rgb(11,83,148)"><b>DEV OPS WORKFLOW</b></span>
+<a href="https://docs.google.com/document/d/1_8oPyW5EmgIw5UbeskjgGbFyBjP3JLBEsvrbgHRVDFc/edit?usp=share_link">DevOps overview</a>
+</div>
+</div>
+
+</div>
+
+<br>
+
+<a href="index.html">back home</a>
+
+</font>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+
+</body>
+</html>
