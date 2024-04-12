@@ -19,6 +19,302 @@
 </div>
 </center>
 
+<center>
+<table width="700" bgcolor="FFFFFF">
+<tbody>
+<tr>
+<td>
+<font size="2">
+
+<div style="border:solid green 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
+
+<div><span style="color:rgb(11,83,148)"><font size="2"><b>R EXAMPLES OF INDIVIDUAL TECHNIQUES</b></font></span> (2019)<br>
+	<font size = "1">Reference Document by Anda Vitols</font>
+</div>
+
+<div style="border:solid sandybrown 1.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<dl><dt><span style="color:rgb(106,168,79)"><i><b>Packages</b> Used in These Exercises</i></span></dt>
+	<dd>These exercises primarily focus on <b>R core packages</b> (automatically initialized)
+	<ul><li><b>base</b> = R Base package</li>
+	<li><b>datasets</b> = R Datasets package</li>
+	<li><b>graphics</b> = R Graphics package</li>
+	<li><b>grDevices</b> = R Graphics Devices and Support for Colours and Fonts</li>
+	<li><b>methods</b> = Formal Methods and Classes</li>
+	<li><b>stats</b> = R Stats package</li>
+	<li><b>utils</b> = R Utils package</li>
+</ul>
+</dd>
+<dd>Other packages used in these exercises
+	<ul><li><b>package::car</b> - Companion to Applied Regression</li>
+		<li><b>package::MASS</b> - Support Functions and Datasets for Venables and Ripley's MASS</li>
+		<li><b>package::psych</b> - Statistics for Psychology
+		<li><i>3D plotting packages</i>: <b>scatterplot3D</b> / <b>rgl</b> / <b>RColorBrewer</b></li>
+	</ul>
+</dd>
+</dl>
+<span style="color:rgb(106,168,79)"><i><b>Datasets</b> Used in These Exercises</i></span>
+<table>
+	<tbody>
+		<tr>
+			<td>datasets::<b>cars</b><br>
+				datasets::<b>chickwts</b><br>
+				datasets::<b>HairEyeColor</b><br>
+				datasets::<b>InsectSprays</b><br>
+				datasets::<b>iris</b><br>
+				datasets::<b>lynx</b><br> 
+				datasets::<b>mtcars</b><br>
+				datasets::<b>quakes</b><br>
+				datasets::<b>sleep</b><br>
+				datasets::<b>state.area</b><br>
+				datasets::<b>swiss</b><br>
+				datasets::<b>Titanic</b><br>
+				datasets::<b>trees</b><br>
+				datasets::<b>USJudgeRatings</b><br>
+				datasets::<b>warpbreaks</b><br>
+				MASS::<b>Painters</b><br>
+				quantreg::<b>engel</b>
+			</td>
+			<td><div style="border:solid sandybrown 1.0pt;padding:.2in 0.2in 0.2in 0.2in">
+				datasets from packages<br>
+				imported datasets<br>
+				<i>manual data collection</i>: <b>Google Correlate</b>, <b>Google Search</b><br>
+				<i>manual data creation</i>: using random number generators
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+
+</div>
+
+<dl>
+<dt><b>DATA VISUALIZATION</b></dt>
+
+<dd><span style="color:rgb(106,168,79)"><i>Describing 1 Outcome Variable</i></span>
+<ul><li><a href="https://docs.google.com/document/d/1lc2-zIOT--h-COn_NVrpjgvuNhIiB4urU3P-RzcLlso/edit?usp=sharing" target="_blank">BAR CHART</a> 
+	<ul>
+		<li>Use IF <b>categorical</b> measures (DO use - easy to read)</li>
+		<li><i>database</i>: <b>datasets::chickwts</b> - 71 observations of 2 variables-predictors</li>
+		<li><i>functions</i>: <b>plot</b> |<b> barplot</b>
+	</ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1Alll7_VvK4oqS7nXWNxbTLRlTVDyjriGn4gUKx2j_Wk/edit?usp=sharing" target="_blank">PIE CHART</a>  
+	<ul>
+		<li>Use IF <b>categorical</b> measures (DON'T use - hard to read)</li>
+		<li><i>database</i>: <b>datasets::chickwts</b> - 71 observations of 2 variables-predictors</li>
+		<li><i>functions</i>: <b>pie</b> | <b>par</b>
+	</ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1dZWZoOiK3AgjVP30TeY9tbvsMAA3bVRtw2uS7YgnAcQ/edit?usp=sharing" target="_blank">HISTOGRAM</a> 
+	<ul>
+		<li>Use IF <b>quantitative</b> variable - for seeing distribution</li>
+		<li><i>timeseries</i>: <b>datasets::lynx</b> - values 144 of observations</li>
+		<li><i>functions</i>: <b>hist</b> | <b>curve</b></li>
+	</ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1aHOQmNV2wD10z2OdTVeu-xSprWi673SFVpYTW3FBgo4/edit?usp=sharing" target="_blank">HISTOGRAM OVERLAY PLOTS</a> 
+	<ul>
+		<li>Use IF <b>quantitative</b> - to see distribution & regression line describing distribution curve</li>
+		<li><i>database</i>: <b>datasets::swiss</b> - 47 observations of 7 variables-predictors</li>
+		<li><i>database</i>: <b>datasets::iris</b> - 150 observations of 5 variables</li>
+		<li><i>functions</i>: <b>hist</b> | <b>curve </b>| <b>line</b></li>
+	</ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1AMQVyjB242Kde8PUC9ZqknL8dD5ikoNLzG0rxOlxvdc/edit?usp=sharing" target="_blank">BOXPLOT</a> 
+	<ul>
+		<li>Use IF <b>quantitative</b> variable - to see distributions, centrality & outliers</li>
+		<li><i>database</i>: <b>datasets::USJudgeRatings</b> - 43 observations of 12 variables-predictors</li>
+		<li><i>functions</i>: <b>boxplot</b></li>
+	</ul>
+</li>
+</ul>
+</dd>
+
+<dd><span style="color:rgb(106,168,79)"><i>Describing &amp; Comparing 2 Outcome Variables</i></span>
+<ul><li><a href="https://docs.google.com/document/d/1_KvDy2z-T1U8CLKCsp0kLQDIAUh52ZufB-Yq2tiNx-I/edit?usp=sharing" target="_blank">MEANS BAR CHART</a>
+	<ul><li>Use IF bivariate association between predictor (6 categories-factors) and outcome (count-frequencies) THEN using barchart to compare group means</li>
+		<li><i>database</i> (like frequency table): <b>datasets::InsectSprays</b> - 72 observations of 2 variables</li>
+	</ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1ffriFurUPvQ3LaLH0ij9CVDPiHIejsCHXcMJspQ8Wv0/edit?usp=sharing" target="_blank">GROUP BOX PLOTS</a>
+	<ul><li>Use IF several predictors on same quantitative outcome</li>
+		<li><i>database</i> <b>MASS::painters</b> - 54 observations of 5 variables</li>
+		<li><i>database</i>: import <b>SearchData.csv</b> (Polson) - 51 observations of 1 variables (data from "<b>Google Correlate</b>" for search terms across states)</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1G5yeuBj_OFTLtG2ESz_vbDpcZKzVBnzvV57FlWP-omE/edit?usp=sharing" target="_blank">SCATTER PLOTS</a>
+	<ul><li>Use IF relationship between 2 quantitative variables</li>
+		<li><i>package</i>: <b>car</b> (Companion to Applied Regression) for plotting tools</li>
+		<li><i>database</i>: <b>datasets::cars</b> - 50 observations of 2 variables</li></ul>
+</li>
+</ul>
+</dd>
+
+<dd><span style="color:rgb(106,168,79)"><i>Discovering, Describing &amp; Comparing Multiple (3+) Outcome Variables</i></span>
+<ul><li><a href="https://docs.google.com/document/d/1ZpmYEKqBpYJQn7pDcZrEtzw0MXmnOHtwfXMKEVKwZ5g/edit?usp=sharing" target="_blank">CLUSTERED BAR CHART</a>
+	<ul><li>Use IF 3 variables (1 outcome frequency - 2 predictor variables)</li>
+		<li><i>table</i>: <b>datasets::warpbreaks</b> - 54 observations of 3 variables</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1PFFMa967Kr7OnZa8gevyZrIHKAzg9idoQu2AGfmvpS4/edit?usp=sharing" target="_blank">SCATTER PLOTS FOR GROUPS</a>
+	<ul><li>Use IF 1 categorical, 2 quantitative variables THEN scatterplot for grouped data</li>
+		<li><i>database</i>: <b>datasets::iris</b> - 150 observtions of 5 variables</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1HhK8V2ePGo1KsGOKikKJRKUmgBB8Q91NkMQnDCDijFs/edit?usp=sharing" target="_blank">SCATTERPLOT MATRICES</a>
+	<ul><li>Use IF look at association of several quantitative variables</li>
+		<li><i>package</i>: <b>car</b></li>
+		<li><i>database</i>: <b>datasets::iris</b> - 150 observations of 5 varaibles</li>
+		<li><i>database</i>: import <b>Search.Data.csv</b> (polson) - 51 observations of 10 variables</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1u7mdQilmLk3tjFHayMPt5TP8dmCA9ibgqIucx1xS-nw/edit?usp=sharing" target="_blank">3D SCATTERPLOTS</a>
+	<ul><li>Use IF want to view 3 variables in 3D</li>
+		<li><i>packages</i>: <b>scatterplot3D</b> / <b>rgl</b> / <b>RColorBrewer</b></li>
+		<li><i>database</i>: <b>datasets::iris</b> - 150 observations of 5 variables</li></ul>
+</li>
+</ul>
+</dd>
+</dl>
+
+<dl>
+<dt><b>DATA STATISTICS</b></dt>
+<dd><span style="color:rgb(106,168,79)"><i>Describing 1 Outcome Variable</i></span>
+<ul><li><a href="https://docs.google.com/document/d/1Azj-au4wFmEekx1Ahl-tvFc0c_Xf8fnQAH0mvYBG4iU/edit?usp=sharing" target="_blank">FREQUENCIES</a> (<b>1 categorical</b> variable) 
+	<ul>
+		<li>Use IF categorical - look at frequencies in a table</li>
+		<li><i>table</i>: google search frequencies-outcome by category-predictor</li>
+		<li><i>functions</i>: <b>table</b> | <b>prop.table</b></li>
+	</ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1JXoXjRpeiAUm3nxDp37eSpiQ0Vnnz0kb38zPRTiJrwE/edit?usp=sharing" target="_blank">DESCRITPIVE SUMMARIES</a> (<b>1 quantitative</b> variable)
+	<ul>
+		<li>Use IF quatitative - describes distribution of variable</li>
+		<li>packages: psych</li>
+		<li><i>database</i>: <b>datasets::cars</b> - 50 observations of 2 variables</li>
+		<li><i>database</i>: <b>datasets::mtcars</b> - 32 observations of 11 variables</li>
+		<li><i>functions</i>: <b>summary</b> | <b>fivenum</b> | <b>boxplot.stats</b> | <b>psych::describe</b></li>
+	</ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1gbpIy0Xs4HiUeQ1c5tfMWflhwzy60dpwurNr30-6y7w/edit?usp=sharing" target="_blank">INFERENTIAL PROPORTION TESTS</a> (<b>1 proportion</b> test)
+	<ul>
+		<li>Use IF quantitative - single proportion hypothesis test and confidence interval</li>
+		<li><i>dataset</i>: manual - baseball team wins</li>
+		<li><i>functions</i>: <b>prop.test</b> Infer by compare a teams winning average to a result by chance (50%)</li>
+	</ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1on9FOWWehhGp_qAzAzD_k6zDn6h7epNKFHpci1hPong/edit?usp=sharing" target="_blank">INFERENTIAL MEANS T-TESTS</a> (<b>1-sample t-test</b>)
+	<ul>
+		<li>Use IF quantitative - single mean hypothesis test & confidence interval - done on 1 variable-predictor</li>
+		<li><i>database</i>: <b>datasets::quakes</b> - 1000 observations of 5 variables-predictors</li>
+		<li><i>functions</i>: <b>t.test</b></li>
+
+	</ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1sPvr8P9NUQqq5kgVCUknx5R4_qE3x9pMV17fZLZZAPs/edit?usp=sharing" target="_blank">INFERENTIAL CHI SQUARE TESTS</a> (<b>1-sample goodness-of-fit test</b>)
+	<ul>
+		<li>Use IF categorical - 1-sample, goodness-of-fit test (one outcome - from 3 predictors)</li>
+		<li><i>table</i>: <b>datasets::HairEyeColor</b> - 3 dimensions x factors for each</li>
+		<li><i>functions</i>: <b>chisq.test</b> | <b>margin.table</b></li>
+	</ul>
+</li>
+</ul>
+</dd>
+
+<dd><span style="color:rgb(106,168,79)"><i>Describing &amp; Comparing 2 Outcome Variables</i></span>
+<ul><li><a href="https://docs.google.com/document/d/1HZ7lvIM6G2tZf0tRERBJtGYLtMBlQWA0-hJV6pCLPHE/edit?usp=sharing" target="_blank">CORRELATIONS</a> (<b>correlation coefficient</b>)
+	<ul><li>Use IF relationship between 2 quantitative variables</li>
+		<li><i>database</i>: <b>datasets::swiss</b> - 47 observationas of 6 variables</li></ul>
+<li><a href="https://docs.google.com/document/d/10r3dwoNUfzmqgRDKvXYYEx_lys0G_-dG0XOwd4ZlNrg/edit?usp=sharing" target="_blank">BIVARIATE REGRESSION</a> (<b>linear regression</b>)
+	<ul><li>Use IF one variable <u>predicts</u> outocme of second varaible THEN association statistic (<b><i>linear regression</i></b>)</li>
+		<li><i>database</i>: <b>datasets::trees</b> - 31 observations of 3 variables</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1I9z0H97hn-WpoFXuw-gCRO9UUniLk2L1E1XcQuqs57A/edit?usp=sharing" target="_blank">MEANS T-TEST</a> (<b>independent 2-group t-test</b>)
+	<ul><li>Use IF compare means of 2 groups (quantitative variables)</li>
+		<li><i>database</i>: <b>datasets::sleep</b> - 20 observations of 3 variables</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1gTnc5tm4OrVm3Y-kJHmaNRz1pNJGRwgueK7IRXMn-lQ/edit?usp=sharing" target="_blank">PAIRED MEANS TEST</a> (<b>paired t-test</b>)
+	<ul><li>Use IF comapre means of one group, before and after intervention THEN <b><i>paired t-tests</i></b></li>
+		<li><i>datasets</i>: create random number datasets -> do intervention on that dataset to create the other dataset</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1u-f5jwWY_nXc11VFoPE_xOtR5LRo0lS4nM7dtDfXbyI/edit?usp=sharing" target="_blank">MEANS ANOVA</a> (<b>one-factor ANOVA</b>, one-way analysis of variance)
+	<ul><li>Use IF compare mewns o one dimension on many groups</li>
+		<li><i>datasets</i>: create random data for 4 groups (same N and std dev, different means)</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1Nxy7yAaTQDYTfVz3R_RFk-WOmfNaQe47-xbBu887TGs/edit?usp=sharing" target="_blank">PROPORTIONS</a> (<b>proportions test</b>)
+	<ul><li>Use IF compare proportions of 2 groups</li>
+		<li><i>datasets</i>: manual</li>
+		<li><i>database</i>: import <b>mlb2011.csv</b> (Poulson)</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1AwwB9VwJ1OQs_bdD03Eg7zjjvBg6YTvTbwhKEzwfT00/edit?usp=sharing" target="_blank">CATEGORICAL CROSS TABS</a> (<b>chi-square test for independence</b>)
+	<ul><li>Use IF tabulate across many dimensions</li>
+		<li><i>dataset</i>: table <b>datasets::Titanic</b> (4 dimensions > narrow down to 2 dimenssions)</li></ul>
+</li>
+</ul>
+</dd>
+
+<dd><span style="color:rgb(106,168,79)"><i>Discovering, Describing &amp; Comparing Multiple (3+) Outcome Variables</i></span>
+<ul><li><a href="https://docs.google.com/document/d/1G-eYSkMksVx0yTO3U3k6DzJXusdq-RYqFmIgpy7X02Q/edit?usp=sharing" target="_blank">REGRESSION</a> (<b>multiple regression</b>)
+	<ul><li>Use IF several varaibles to predict scores on single outcome</li>
+		<li><i>database</i>: <b>datasets::USJudgeRatings</b> - 34 observations of 12 variables</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1agjQgREzMVTiDtxXf8YWFqo8ZbdWAzcuYPh6JkG31BY/edit?usp=sharing" target="_blank">2 FACTOR ANOVA</a> (<b>2-factor analysis of varaiance</b>)
+	<ul><li>Use IF 2 categorical predictor variables, 1 quantitative outcome</li>
+		<li><i>database</i>: datasets::<b>warpbreaks</b> - 54 observations of 3 variables</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1IM3tTnt-pjC9rh0G9d-HS_MGBk02QGhjPrO7yo-MDS0/edit?usp=sharing" target="_blank">CLUSTERING</a> (<b>clustering observations/cases</b>)
+	<ul><li>Use IF grouping observations, based on similarities of variables</li>
+		<li>3 major types of clustering
+			<ul><li><b><i>split</i></b>: into number of clusters (<b>k-means</b>)</li>
+				<li><b><i>hierarchical</i></b>: start seperate > combine</li>
+				<li><b><i>divide</i></b>: start single > split</li></ul>
+		<li><i>database</i>: <b>datasets::mtcars</b> - 32 observations of 11 variables</li>
+		<li><i>database</i>: import <b>StateClusterData.csv</b> (polson) - google search data</li>
+	</li></ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1P7zZhaVPnSa_NeWk53jAacbmOnxRHlwIV2op82P_JCs/edit?usp=sharing" target="_blank">PRINCIPLE COMPONENT FACTORS</a> (<b>grouping varaibles/predictors</b>)
+	<ul>
+		<li>If looking for most significant predictors THEN
+			<ul>
+				<li><b><i>principle components</i></b> = components as result of varaibles</li>
+				<li><b><i>factor analysis</i></b> = variables as result of factor</li></ul>
+		<li><i>database</i>: <b>datasets::mtcars</b> - 32 observations of 11 variables</li>
+	</ul>
+</li>
+</ul>
+</dd>
+</dl>
+
+<dl>
+<dt><b>STATISTICS FOR ROBUST DATA</b></dt>
+<dd><span style="color:rgb(106,168,79)"><i>Procedures resistant to outliers and non-normal distributions</i></span>
+<ul>
+<li><a href="https://docs.google.com/document/d/1cRERzxYi7HL7jvXUa30T1snX2tUNdseqUfBmQUV8Knw/edit?usp=sharing" target="_blank">ROBUST UNIVARIATE TESTS</a>
+	<ul>
+		<li>Use IF data that does not fit into assumptions of test</li>
+		<li><i>database</i>: <b>datasets::state.area</b> "US States Facts and Figures" - highly skewed with outliers</li>
+		<li><i>functions</i>: <b>median</b> | <b>mean</b> - <b>trim</b> | <b>sd</b> | <b>mad</b> | <b>IQR</b>&nbsp; | <b>fivenum</b></li> 
+	</ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1stok3wGuZ1R9nv3h9EJicSl8L-opOYlCvryPvRkAtjE/edit?usp=sharing" target="_blank">ROBUST BIVARIATE TESTS</a>
+	<ul><li>Use IF data that does not fit into assumptions of test</li>
+		<li>packages: <b>robust</b> / <b>robustbase</b> / <b>MASS</b> / <b>quantreg</b></li>
+		<li><i>database</i>: <b>quantreg::engel</b> - 235 observations of 2 variables</li></ul>
+</li>
+</ul>
+</dd>
+
+</dl>
+
+
+</div>
+
+</font>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+
+
+<br>
 
 <center>
 <table width="700" bgcolor="FFFFFF">
@@ -28,100 +324,111 @@
 <font size="2">
 
 <div style="border:solid green 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
-<span style="color:rgb(11,83,148)"><font size="2"><b>R EXAMPLES OF INDIVIDUAL TECHNIQUES</b></font></span> (2023)<br>
-<font size = "1">Reference Document by Anda Vitols</font><br>
-Here I explored tidyverse, piping and other tools that have become more intuitive and efficient for wrangling tasks. I also delve deeper into modeling and mining. R is now fully integrated with non-proprietory apps, as well as having a whole set of publishing apps for docuemnts and applicaiton creation. 
 
-<div style="border:solid sandybrown 1.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<div><span style="color:rgb(11,83,148)"><font size="2"><b>R EXAMPLES: PREPARING DATA</b></font></span> (2019)
+</div>
+
+
 <dl>
-<dt>DATA WRANGLING</dt>
-	<dd><span style="color:rgb(106,168,79)"><i>Import data and save in R format</i></span>
-		<ul><li><a href="">import-save data</a>
-			<ul>
-			<li>importing built-in datasets, datasets in packages and spreadsheets</li>
-			<li>scraping from web (xml, json)</li>
-			<li>explore and save data in R format</li></ul>
-		</li>
-	</dd>
-	<dd><span style="color:rgb(106,168,79)"><i>Data Preperatione</i></span>
-		<ul><li><a href="">wrangling data</a>
-			<ul>
-				<li><i>working with data-base style data-frames:</i> (how to tidy data / how to big data / conversting tall <-> wide / filtering case)</li>
-				<li><i>working with other types of datsets:</i> (dates & times / list data / XML data / categorical variables)</li>
-			</ul>
-		</li>
-			<li><a href="">recoding data</a>
-			<ul>
-				<li>recoding categorical and quantitative data</li>
-				<li>transform outliers</li>
-				<li>working with scores</li>
-			</ul>
-			</li>
+
+<dt><b>GETTING STARTED</b></dt>
+<dd><span style="color:rgb(106,168,79)"><i>Preparing R Analysis Environment</i></span>
+<ul>
+	<li><a href="https://docs.google.com/document/d/1VPmBsjVJ0U6V7qUmt8-PxEzUEHxf0Cd5JBAk7mQk9z0/edit?usp=sharing" target="_blank">built in data sets</a>
+		<ul><li><i>methods-functions:</i> </li>
 		</ul>
-		</dd>
+	</li>
+	<li><a href="https://docs.google.com/document/d/1ovSGY9Ur5h1PSgG5OlBBM4ioRmKHFOtsq8lmvdqujfM/edit?usp=sharing" target="_blank">importing files</a>
+		<ul><li><i>methods-functions:</i> </li>
+		</ul>
+	</li>
+	<li><a href="https://docs.google.com/document/d/1zLLkDVClOeztesbgq50fK7Kws1RQtjILyoTXhvmFVJo/edit?usp=sharing" target="_blank">manual data entry</a>
+		<ul><li><i>methods-functions:</i> </li>
+		</ul>
+	</li>
+	<li><a href="https://docs.google.com/document/d/1eHh7ssGiBHSnf8NzprT1BghVg92mhKjzFpKFlA5VA-w/edit?usp=sharing" target="_blank">exporting files</a>
+		<ul><li><i>methods-functions:</i> </li>
+		</ul>
+	</li>
+</ul>
+</dd>
+
+
+<dt><b>WORKING WITH COLOUR</b></dt>
+<dd><span style="color:rgb(106,168,79)"><i>Colours for Data Visualization</i></span>
+<ul>
+	<li><a href="https://www.dropbox.com/scl/fi/39o8jwlyrguhsyclfvstj/R-color.docx.pdf?rlkey=0w91vir0skgnl1f69yha02r76&dl=0" target="_blank">using R's built-in colour tools</a>
+		<ul><li><i>dataset:</i> </li>
+		<li><i>methods-functions:</i> </li>
+		</ul>
+	</li>
+	<li><a href="https://www.dropbox.com/scl/fi/9outjudjn3adu3mhd25f2/colorBrewer-package.docx.pdf?rlkey=o6vevls4xgg7oiox6jbwc26m2&dl=0" target="_blank">using <b>package::ColorBrewer</b></a>
+		<ul><li><i>dataset:</i> </li>
+		<li><i>methods-functions:</i> </li>
+		</ul>
+	</li>
+	<li><a href="https://www.dropbox.com/scl/fi/g8aiorvi5l8v0dy76rfi7/R-ColorExamples.docx.pdf?rlkey=cifid8wi4ysc95lp4gf40fy9j&dl=0" target="_blank">R colour examples</a>
+		<ul><li><i>dataset:</i> </li>
+		<li><i>methods-functions:</i> </li>
+		</ul>
+	</li>
+</ul>
+</dd>
+
+<dt><b>DATA WRANGLING</b></dt>
+<dd><span style="color:rgb(106,168,79)"><i>Data Set Adjusting</i></span>
+<ul>
+	<li><a href="https://docs.google.com/document/d/1iOsjqMWtuw0CXQG1-otS2aVc0tk6Vh-w8i-KycM1HZU/edit?usp=sharing" target="_blank">convert table to rows in data frame</a>
+		<ul><li><i>dataset:</i> </li>
+			<li><i>methods-functions:</i> </li>
+		</ul>
+	</li>
+	<li><a href="https://docs.google.com/document/d/1T8r5RGhQidASAss5JgMppYV7Rchtl0-IeviscyitIno/edit?usp=sharing" target="_blank">creating cases from data sets</a>
+		<ul><li><i>dataset:</i> </li>
+			<li><i>methods-functions:</i> </li>
+		</ul>
+	</li>
+	<li><a href="https://docs.google.com/document/d/19Ja-ux930SYYGbvWAl5aVJ6je0IARVLgDH2RctMSn3M/edit?usp=sharing" target="_blank">subgrouping data sets</a>
+		<ul><li><i>dataset:</i> </li>
+			<li><i>methods-functions:</i> </li>
+		</ul>
+	</li>
+	<li><a href="https://docs.google.com/document/d/1W4apaa5jbrm2uMCkSnBsck91D3Q9p7qLifuJ-jUn4OE/edit?usp=sharing" target="_blank">splitting &amp; merging data sets</a>
+		<ul><li><i>dataset:</i> </li>
+			<li><i>methods-functions:</i> </li>
+		</ul>
+	</li>
+</ul>
+</dd>
+
+<dd><span style="color:rgb(106,168,79)"><i>Fixing Data Values</i></span>
+<ul>
+	<li><a href="https://docs.google.com/document/d/1LFQ5BbIdNRzsupqrWA9arJ6fCH5eaKqwORP_TY9aluA/edit?usp=sharing" target="_blank">outliers</a>
+		<ul><li><i>dataset:</i> </li>
+			<li><i>methods-functions:</i> </li>
+		</ul>
+	</li>
+	<li><a href="https://docs.google.com/document/d/1LFQ5BbIdNRzsupqrWA9arJ6fCH5eaKqwORP_TY9aluA/edit?usp=sharing" target="_blank">skewed distributions</a>
+		<ul><li><i>dataset:</i> </li>
+			<li><i>methods-functions:</i> </li>
+		</ul>
+	</li>
+	<li><a href="https://docs.google.com/document/d/18tHnfBVCxPTyKW4a2G6lGmQJnfgTEpinpvnDNqWTiro/edit?usp=sharing" target="_blank">variable combinations</a>
+		<ul><li><i>dataset:</i> </li>
+			<li><i>methods-functions:</i> </li>
+		</ul>
+	</li>
+	<li><a href="https://docs.google.com/document/d/1iXkYl3aHp1orWEligpas5drnn3SqhYDuodAV_fAxjC8/edit?usp=sharing" target="_blank">missing data</a>
+		<ul><li><i>dataset:</i> </li>
+			<li><i>methods-functions:</i> </li>
+		</ul>	
+	</li>
+</ul>
+</dd>
+
 </dl>
 
-
-
 </div>
-
-<dl>
-<dt>DESCRITPIVE DATA ANALYSIS - looking at data</dt>
-	<dd>
-		<ul><li><a href="">visualizing data</a>
-			<ul>
-				<li>using colours and colour palettes</li>
-				<li>creating charts, histograms, scatterplots, graphs</li> 
-			</ul>
-		</li>
-		<li><a href="">statistically describing and exploring data</a></li></ul>
-	</dd>
-
-<dd><br></dd>
-<dt>DATA MODELING</dt>
-	<dd>
-		<ul><li><b><i>inferences</i></b>: <a href="">analyzing data</a></li>
-		<li><b><i>regressions</i></b>: <a href="">predicting outcomes</a></li></ul>
-	</dd>
-
-<dd><br></dd>
-<dt>DATA MINING - finding patterns in the noise</dt>
-<dd><span style="color:rgb(106,168,79)"><i>databases</i></span>
-	<ul><li>mining variables 
-		<ul><li>which dimensions have most impact on data pattern?</li>
-			<li><a href="">dimensions reduction methods</a></li>
-			</ul>
-		</li></ul>
-	<ul><li>mining cases
-		<ul><li>looking for similarities in observations</li>
-			<li><a href="">case grouping methods</a></li>
-			<li><a href="">case classification methods</a></li>
-			</ul>
-	</li></ul>
-	<ul><li>mining associations
-		<ul><li>looking for behavioural associations: IF someone buys this THEN they likely will buy that</li>
-			<li><a href="">assocaition analysis</a></li></ul>
-	</li></ul>
-</dd>
-
-<dd><span style="color:rgb(106,168,79)"><i>time series datasets</i></span>
-	<ul><li><a href="">time series analysis</a>: how data changes over time
-		<li>IF there was an intervention THEN did expected change happen?</li>
-		<li>IF there is a change over time THEN can the data expalin why that happened?</li>
-	</ul>
-</dd>
-
-<dd><span style="color:rgb(106,168,79)"><i>text datasets</i></span>
-	<ul><li><a href="">sentiment analysis</a></li>
-		<li>first look at text analysis with prompt engineering (natural language processing) and R wrangling</li>
-	</ul>
-</dd>
-
-</dl>
-
-</div>
-
-
 <a href="index.html">back home</a>
 
 </font>
