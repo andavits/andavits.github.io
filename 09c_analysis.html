@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Anda's IT Library - Data Examples</title>
+		<meta name="description" content="Anda Vitols' IT Library" />
+		<meta http-equiv="author" content="Anda Vitols" />
+		<style type="text/css">
+			body {
+				font-family: arial, Verdana, sans-serif;
+				background-color: rgb(185,179,175);}
+		</style>
+	</head>
+
+<body>
+
+<center>
+<span style="font-family:arial,sans-serif; color:rgb(11,83,148)" ><font size="6"><b>ANDA'S IT LIBRARY</b></font></span>
+<div style="text-align:center"><span style="color:rgb(11,83,148)"><font size="2"><b><i>DATA EXAMPLES (chronological)</i></b></font></span>
+</div>
+</center>
+
+
+<center>
+<table width="700" bgcolor="FFFFFF">
+<tbody>
+<tr>
+<td>
+<font size="2">
+
+<div style="border:solid green 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
+
+<font size = "1">Reference Document by Anda Vitols</font><br>
+Here I explored tidyverse, piping and other tools that have become more intuitive and efficient for wrangling tasks. I also delve deeper into modeling and mining. R is now fully integrated with non-proprietory apps, as well as having a whole set of publishing apps for document and application creation. 
+
+<div style="border:solid sandybrown 1.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<dl>
+<dt><b>ON THIS PAGE</b></dt>
+<dd>section 4: DATA MINING (advanced data exploration using ML) 
+	<ul>
+		<li>About Variables</li>
+		<li>About Cases</li>
+		<li>About other types of datasets</li>
+	</ul>
+</dd>
+</dl>
+</div>
+
+</font>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+
+
+<br>
+
+
+<center>
+<table width="700" bgcolor="FFFFFF">
+<tbody>
+<tr>
+<td>
+<font size="2">
+
+<div style="border:solid green 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<span style="color:rgb(11,83,148)"><font size="2"><b>section 4: DATA MINING</b></font></span> (2023 -2024)
+
+<div style="border:solid sandybrown 1.0pt;padding:.2in 0.2in 0.2in 0.2in">
+
+<dl>
+<dt>ABOUT VARIABLES - exploring dimension data</dt>
+	<dd>
+		<ul>
+			<li>conducting - a <b>prinicpal component analysis (PCA)</b></li>
+			<li>conducting - a <b>LDA</b></li>
+			<li>conducting - a <b>t_SNE</b></li>
+		</ul>
+	</dd>
+<dt>ABOUT CASES - clustering & classifying cases</dt>
+	<dd>clustering
+		<ul>
+			<li>grouping - cases - with <b>hierarchical clustering</b></li>
+			<li>grouping - cases - with <b>k-means clustering</b></li>
+			<li>grouping - cases - with <b>DBScan</b></li>
+		</ul>
+		</dd>
+	<dd>classifying
+		<ul>
+			<li>classifying - cases - with <b>k-nearest-neighbors (k-nn)</b></li>
+			<li>classifying - cases - with <b>naive bayes</b></li>
+			<li>classifying - cases - with <b>decision-trees</b></li>
+		</ul>
+	</dd>
+<dt>ABOUT OTHER TYPES OF DATA STRUCTURES</dt>
+	<dd>predicting - classification behaviour - with <b>assocation analysis</b>
+		<ul>
+			<li><b>Apriori</b></li>
+			<li><b>Eclat</b></li>
+			<li><b>CBA</b></li>
+		</ul>	
+	</dd>
+	<dd>decomposing - dimension behaivor over time - with <b>time-series analysis</b>
+		<ul>
+			<li><b>decomposition</b></li>
+			<li><b>ARIMA</b></li>
+			<li><b>MLP</b></li>
+		</ul>	
+	</dd>
+	<dd>grouping word patterns - with <b>text mining</b>
+		<ul>
+			<li><i>sentiment analysis</i> 
+				<ul>
+					<li><b>binary classification</b></li>
+					<li><b>sentiment scoring</b></li>
+				</ul>
+			</li>
+			<li><b>visual word pairs</b></li>
+		</ul>
+		
+	</dd>
+
+
+</dl>
+
+</div>
+
+<dl>
+<dt><b>DATA MINING</b> - finding patterns in the noise</dt>
+<dd><span style="color:rgb(106,168,79)"><i><b>Database</b> datasets</i></span>
+	<ul><li><b>Mining Variables</b> (columns) 
+			<ul>
+				<li>which dimensions have most impact on data pattern?</li>
+				<li>DIMENSION REDUCTION
+					<ul>
+					<li><i>datasets</i>: <b>optidigits.csv, datasets::swiss</b></li>
+					<li><a href="">PCA (principal component analysis)</a></li>
+					<li><a href="">CDA</a></li>
+					<li><a href="">t-SNE</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li><b>Mining Cases</b> (rows, observations)
+			<ul>
+				<li>looking for similarities in observations</li>
+				<li>CLUSTERING</a>
+					<ul>
+					<li><i>datasets</i>: <b>penguins.rds, datasets::iris</b></li>
+					<li><a href="">HIERARCHICAL clustering</a></li>
+					<li><a href="">k-MEANS clustering</a></li>
+					<li><a href="">DBSCAN</a></li>
+					</ul>
+				</li>
+				<li>CLASSIFICATION
+					<ul>
+					<li><i>datasets</i>: <b>spambase.csv, mlbench::BreastCancer</b></li>
+					<li><a href="">K-NN (k-nearest neighbours)</a></li>
+					<li><a href="">NAIVE BAYES</a></li>
+					<li><a href="">DECISION TREES</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</dd>
+
+<dd><span style="color:rgb(106,168,79)"><i><b>List</b> dataset</i></span>
+	<ul>
+		<li>looking for behavioural associations: IF someone buys this THEN they likely will buy that</li>
+		<li>ASSOCIATION ANALYSIS
+			<ul>
+				<li><i>datasets</i>: <b>arules::groceries, arules::Epub</b></li>
+				<li><a href="">APRIORI</a></li>
+				<li><a href="">ECLAT</a></li>
+				<li><a href="">CDA</a></li>
+			</ul>
+		</li>
+	</ul>		
+</dd>
+
+
+<dd><span style="color:rgb(106,168,79)"><i><b>Time series</b> datasets</i></span>
+	<ul>
+		<li>how data changes over time</li>
+		<li>TIME SERIES ANALYSIS
+			<ul>
+			<li><i>datasets</i>: <b>datasets::AirPassengers, datasets::euStockMarkets</b></li>
+			<li><a href="">TIME-SERIES DECOMPOSTION</a></li>
+			<li><a href="">ARIMA</a></li>
+			<li><a href="">MLP</a></li>
+			</ul>
+		</li>	
+	</ul>
+</dd>
+
+<dd><span style="color:rgb(106,168,79)"><i><b>Text</b> datasets</i></span>
+	<ul><li>SENTIMENT ANALYSIS
+		<ul>
+		<li><i>datasets</i>: import <b>TheIlliad.txt, LittleWomen.txt</b></li>
+		<li><i>methods</i>: 
+			<ul>
+				<li>classsification: <a href="">BINARY classification</a></li>
+				<li>comparison: <a href="">SENTIMENT SCORING</a>, <a href="">VISUAL WORD PAIRS</a></li>
+			</ul>
+		</li>	
+	</ul>
+</dd>
+
+</dl>
+
+</div>
+<br>
+
+<a href="index.html">back home</a> | <a href="09_reports.html">back to reports</a>
+
+</font>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+
+
+</body>
+</html>
