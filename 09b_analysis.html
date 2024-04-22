@@ -28,50 +28,89 @@
 <font size="2">
 
 <div style="border:solid green 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
-<span style="color:rgb(11,83,148)"><font size="2"><b>R EXAMPLES OF INDIVIDUAL TECHNIQUES</b></font></span> (2023)<br>
-<font size = "1">Reference Document by Anda Vitols</font><br>
-Here I explored tidyverse, piping and other tools that have become more intuitive and efficient for wrangling tasks. I also delve deeper into modeling and mining. R is now fully integrated with non-proprietory apps, as well as having a whole set of publishing apps for docuemnts and applicaiton creation. 
 
+<font size = "1">Reference Document by Anda Vitols</font><br>
+Here I explored tidyverse, piping and other tools that have become more intuitive and efficient for wrangling tasks. I also delve deeper into modeling and mining. R is now fully integrated with non-proprietory apps, as well as having a whole set of publishing apps for document and application creation. 
 
 <div style="border:solid sandybrown 1.0pt;padding:.2in 0.2in 0.2in 0.2in">
 <dl>
 <dt><b>ON THIS PAGE</b></dt>
-<dt><b>R Examples of Indivisual Methods</b></dt>
-	<dd>Describe the dataset
+<dd>section 1: PREPARE DATA
+	<ul>
+		<li>Getting Started</li>
+		<li>Data Wrangling - dataset structure</li>
+		<li>Data Wrangling - recoding values</li>
+	</ul>
+</dd>
+<dd>section 2: DESCRIBE DATA SET
+	<ul>
+		<li>Visualizing Data</li>
+		<li>Explore Data</li>
+	</ul>
+</dd>
+<dd>section 3: DATA MODELING
+	<ul>
+		<li>Analyzing Data</li>
+		<li>Predict Outcomes</li>
+		<li>Machine Learning for socio-psychological data</li>
+	</ul>
+</dd>
+</dl>
+</div>
+
+</font>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+
+
+<br>
+
+<center>
+<table width="700" bgcolor="FFFFFF">
+<tbody>
+<tr>
+<td>
+<font size="2">
+
+
+<div style="border:solid green 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<span style="color:rgb(11,83,148)"><font size="2"><b>section 2: DESCRIBE THE DATASET</b></font></span> (2023)<br>
+
+<div style="border:solid sandybrown 1.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<dl>
+	<dt>VISUALIZE DATA</dt>
+	<dd>About Colour / About Palettes</dd>
+	<dd>One Variable or Measure
 		<ul>
-			<li>Visualize data</li>
-			<li>Descriptive statistics</li>
-		</ul>	
-	</dd>
-	<dd>Data Modeling
-		<ul>
-			<li>Comparing & Inferences</li>
-			<li>Regressions</li>
-			<li>Machine Learning</li>
+			<li>creating - <b>barcharts</b> - shows counts, proportions</li>
+			<li>creating - <b>histograms</b> - shows distributions</li>
+			<li>creating - <b>boxplots</b> - shows distributions</li>
 		</ul>
 	</dd>
-<dt><b>Preparing Data</b></dt>
-	<dd>Getting Started
+	<dd>
 		<ul>
-			<li>Preparing my R workspace</li>
-			<li>Importing datasets to workspace</li> 
+			<li>creating - <b>scatterplots</b> - shows realtionship between 2 distributions</li>
+			<li>creating - <b>multiple graphs</b> - shows relationship amongst multiple distributions</li>
+			<li>creating - <b>cluster charts</b> - shows grouping of observations/cases</li>
 		</ul>
 	</dd>
-	<dd>Data Wrangling
+	<dt>EXPLORE DATA</dt>
+	<dd>
 		<ul>
-			<li>Preprare dataset <i>Structure</i> for analysis</li>
-			<li>Prepare data <i>Values</i> in dataset</li>
+			<li>computing - <b>frequencies</b></li>
+			<li>computing - <b>descriptive statistics</b></li>
+			<li>computing - <b>correlations</b></li>
+			<li>creating - <b>contingency tables</b></li>
 		</ul>
-	</dd>
-	<dd>Data Mining
 	</dd>
 </dl>
 </div>
 
-
 <dl>
 <dt><b>DESCRIBE THE DATASET</b></dt>
-
 	<dd><span style="color:rgb(106,168,79)"><i><b>Visualizing</b> Data</i></span>
 		<ul>
 			<li><a href="https://docs.google.com/document/d/1Rr3sTq_ZU46RURGIovT7NSxlYaKOaKAN5nZmJOnhtSQ/edit?usp=sharing">About Colour</a>
@@ -160,6 +199,75 @@ Here I explored tidyverse, piping and other tools that have become more intuitiv
 	</dd>
 </dl>
 
+</div>
+
+</font>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+
+
+<br>
+
+
+<center>
+<table width="700" bgcolor="FFFFFF">
+<tbody>
+<tr>
+<td>
+<font size="2">
+
+<div style="border:solid green 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
+
+<span style="color:rgb(11,83,148)"><font size="2"><b>section 3: DATA MODELING</b></font></span> (2023)<br>
+
+<div style="border:solid sandybrown 1.0pt;padding:.2in 0.2in 0.2in 0.2in">
+
+<dl>
+<dt>ANALYZING DATA</dt>
+<dd>
+	<ul>
+		<li>comparing - proportions - with <b>chi-square for contingency tables</b></li>
+		<li>comparing - one-mean to a population - with <b>one-sample t-test</b></li>
+		<li>comparing - paired means - with <b>paired-samples t-test</b></li>
+		<li>comparing - two-means - with <b>independent-samples t-test</b></li>
+		<li>comparing - multiple-means - with <b>one-factor analysis-of-variance</b></li>
+		<li>comparing - means with multiple predictors - with <b>factorial analysis of variance</b></li>
+	</ul>
+</dd>
+<dt>PREDICTING OUTCOMES</dt>
+<dd>
+	<ul>
+		<li>predicting - outcomes - with <b>linear regression</b></li>
+		<li>predicting - outcomes - with <b>lasso regression</b></li>
+		<li>predicting - outcomes - with <b>quantile regression</b></li>
+		<li>predicting - outcomes - with <b>logistic regresssion</b></li>
+		<li>predicting - outcomes - with <b>log-linear or Poisson regression</b></li>
+		<li>assessing - predictions - with <b>blocked-entry models</b></li>
+	</ul>
+</dd>
+<dt>MACHINE LEARNING FOR SOCIO-PSYCHOLOGICAL DATA</dt>
+<dd><i><u>About variables</u></i>: exploring dimension reduction
+	<ul>
+		<li>conducting - a <b>principal component analysis</b></li>
+		<li>conducting - an <b>item analysis</b></li>
+		<li>conducting - a <b>confirmatory factor analysis</b></li>
+	</ul>
+	</dd>
+<dd><i><u>About cases</u></i>: clustering & classifying observations/cases
+	<ul>
+		<li>grouping - cases - with <b>hierarchical clustering</b></li>
+		<li>grouping - cases - with <b>k-means clustering</b></li>
+		<li>classifying - cases - with <b>k-nearest neighbors</b></li>
+		<li>classifying - cases - with <b>decision-tree analysis</b></li>
+		<li>creating - ensemble models - with <b>random forests</b></li>
+	</ul>
+</dd>
+</dl>
+
+</div>
 
 
 <dl>
@@ -349,21 +457,53 @@ Here I explored tidyverse, piping and other tools that have become more intuitiv
 <font size="2">
 
 <div style="border:solid green 2.0pt;padding:.2in 0.2in 0.2in 0.2in">
-<span style="color:rgb(11,83,148)"><font size="2"><b>R EXAMPLES - PREPRARING DATA</b></font></span> (2023)<br>
+<span style="color:rgb(11,83,148)"><font size="2"><b>section 1: PREPRARING DATA</b></font></span> (2023)<br>
+
+<div style="border:solid sandybrown 1.0pt;padding:.2in 0.2in 0.2in 0.2in">
+<dl>
+<dt>GETTING STARTED</dt>
+<dd>
+	<ul>
+		<li>prepraring - my R <b>workspace</b></li>
+		<li>importing & saving - data and in R format</li>
+	</ul>
+</dd>
+<dt>DATA WRANGLING - prepare dataset STRUCTURE for analysis</dt>
+<dd>
+	<ul>
+		<li>preparing - <b>data frames</b> for data analysis</li>
+		<li>converting - <b>dataset structure</b></li>
+		<li>extracting -  <b>data</b> from dataset</li>
+	</ul>
+</dd>
+<dt>DATA WRANGLING - recoding data VALUES in dataset</dt>
+<dd>
+	<ul>
+		<li>recoding - <b>variables</b> (categorical / quantitative)</li>
+		<li>transforming - <b>outliers</b></li>
+		<li>recoding - <b>scores</b> (count / average)</li>
+	</ul>
+</dd>
+</dl>
+</div>
 
 <dl>
 <dt><b>GETTING STARTED</b></dt>
-	<dd><span style="color:rgb(106,168,79)"><i><b>Import</b> data and <b>save</b> in R format</i></span>
-		<ul><li><a href="">Import & Save to R format</a> - contents & script summaries</li>
+	<dd><span style="color:rgb(106,168,79)"><i>Preprare R <b>Workspace</b></i></span>
+		<ul><li><a href="">R Workspace</a></li></ul>
+		</dd>
+	<dd><span style="color:rgb(106,168,79)"><i><b>Import</b> data and <b>Save</b> in R format</i></span>
+		<ul>
 			<li>IMPORT data
 				<ul>
-				<li>import BUILT-IN datasets</li>
-				<li>import SPREADSHEETS - import <b>statedata</b></li>
-				<li>import XML - website "ergast"</li>
-				<li>import JSON  - website "ergast"</li>
-			</ul>
+				<li><a href="https://docs.google.com/document/d/1dKPrZAK2W9O5rYgP8Atk86EP-wNQ1jiBpMHEnPZmIPk/edit?usp=drive_link">importing overview</a></li>
+				<li>import <a href="https://docs.google.com/document/d/1EiqYv2dIS7moHNxze_z8K6VsKfP4QUQVu64fFF1DESs/edit?usp=drive_link">BUILT-IN datasets</a></li>
+				<li>import <a href="https://docs.google.com/document/d/1jVwVAYmgMMJgc-WTrQhK_K4XNTcuyW3MWrkF4iKy8Vc/edit?usp=drive_link">SPREADSHEETS</a> - import <b>statedata</b></li>
+				<li>import <a href="https://docs.google.com/document/d/1cCKnsr90eO8c3Omv0pZzbsEAob21WSTUVoVFzdTvrKo/edit?usp=drive_link">XML</a> - website "ergast"</li>
+				<li>import <a href="https://docs.google.com/document/d/1vEtTxls_SdR3oM9LcOw1_VGf2cUsVq1VwtETLwkKEX4/edit?usp=drive_link">JSON</a>  - website "ergast"</li>
+				</ul>
 			</li>
-			<li>SAVE to R formats
+			<li><a href="https://docs.google.com/document/d/1Qv7kPpCJEJaUFoKa-V1sJVubC5b6D0xRumgHCq51IDU/edit?usp=drive_link">SAVE to R formats</a>
 				<ul>
 					<li><b>.rdata .rda .rds</b></li>
 				</ul>
@@ -374,41 +514,39 @@ Here I explored tidyverse, piping and other tools that have become more intuitiv
 
 
 <dl>
-<dt><b>DATA WRANGLING</b></dt>
-	<dd><a href="">Data Wrangling Topics and Code Summaries</a></dd>
+<dt><b>DATA WRANGLING</b> - prepare dataset <b>structure</b> for analysis</dt>
 	<dd><span style="color:rgb(106,168,79)"><i>Preparing <b>Ideal Data Frames</b> for Computer Analysis</i></span>
 		<ul>
-			<li>Create <b>tidy data</b>
-				<ul><li><i>packages:</i> <b>datasets, pacman, tidyverse, lubridate, XML</b></li>
-					<li><a href="">TIME SERIES</a>
+			<li><a href="https://docs.google.com/document/d/1wCsNFcSqAp1qBj46edyJzrrCIjlF2LKecRUKWvxTZys/edit?usp=drive_link">TIDY DATA</a>
+				<ul>
+					<li>Create - <b>tidy data</b> - from time-series, XML, JSON, compound-variables</li>
+					<li><i>packages:</i> <b>datasets, pacman, tidyverse, lubridate, XML</b></li>
+					<li>TIME SERIES
 						<ul>
-							<li>Creating tidy data from time-series dataset</li>
 							<li><i>dataset:</i> <b>datasets::sunspots</b></li>
 						</ul>
 					</li>
-					<li><a href="">XML & JSON</a>
+					<li>XML & JSON
 						<ul>
-							<li>Create tidy data from data scraped from the web</li>
 							<li><i>dataset:</i> <b>XMLdata.xml</b></li>
 						</ul>
 					</li>
-					<li><a href="">COMPOUND VARIABLES</a>
+					<li>COMPOUND VARIABLES
 						<ul>
-							<li>Create tidy data from compound variables</li>
 							<li><i>dataset:</i> enter example artifical data</li>
 						</ul>
 					</li>
 				</ul>
 			</li>
-			<li><a href="">TIBBLES</a>
+			<li><a href="https://docs.google.com/document/d/1Es2JW5-xHbQ_LEAG-HkgpwOZN8sgn22anaXNxk7_kHU/edit?usp=drive_link">TIBBLES</a>
 				<ul>
-					<li>Using tibbles</li>
+					<li>Using - <b>tibbles</b> - for clean data frame</li>
 					<li><i>packages:</i> <b>datasets, pacman, tidyverse</b></li>
 					<li><i>dataset:</i> <b>datasets::Orange</b></li></ul>
 			</li>
-			<li><a href="">DATA.TABLE</a>
+			<li><a href="https://docs.google.com/document/d/11TD-7KIEg2ePXPPC3yeokmy8QmBMNUNEWsIh0c19wEo/edit?usp=drive_link">DATA.TABLE</a>
 				<ul>
-					<li>Using data.table package for very large datasets</li>
+					<li>Using - <b>data.table</b> - package for very large datasets</li>
 					<li><i>packages:</i> <b>pacman, data.table, htrr, tidyverse</b></li>
 					<li><i>dataset:</i> figshare.com website</li></ul>
 			</li>
@@ -416,15 +554,13 @@ Here I explored tidyverse, piping and other tools that have become more intuitiv
 		</dd>
 	<dd><span style="color:rgb(106,168,79)"><i><b>Converting</b> Dataset <b>Structure</b></i></span>
 		<ul>
-			<li><a href="">WIDE-TO-TALL & TALL-TO-WIDE</a>
+			<li><a href="https://docs.google.com/document/d/1oVh0LwwcHLYxb2YQ-qhzzkLhh-d8h4dQ8Wfx6TZkd8o/edit?usp=drive_link">WIDE-TO-TALL & TALL-TO-WIDE</a>
 				<ul>
-					<li>Converting data from wide to tall and from tall to wide</li>
 					<li><i>packages:</i> <b>pacman, MASS, tidyverse</b></li>
 					<li><i>dataset:</i> <b>MASS::housing</b></li></ul>
 			</li>
-			<li><a href="">TABLE-TO-ROWS</a>
+			<li><a href="https://docs.google.com/document/d/15PPvUtzQVRSz4izZfsCvQ5rt-FYtRtomBl8sIrce97Y/edit?usp=drive_link">TABLE-TO-ROWS</a>
 				<ul>
-					<li>Converting data from table to rows</li>
 					<li><i>packages:</i> <b>datasets, pacman, tidyverse</b></li>
 					<li><i>datasets:</i> <b>datasets::UCBAdmissions</b>, <b>datasets::HairColor</b></li></ul>
 			</li>
@@ -432,33 +568,29 @@ Here I explored tidyverse, piping and other tools that have become more intuitiv
 		</dd>
 	<dd><span style="color:rgb(106,168,79)"><i><b>Extracting Data</b> from the Dataset</i></span>
 		<ul>
-			<li><a href="">DATES & TIMES</a>
+			<li><a href="https://docs.google.com/document/d/112eWqKa9yov2ZQZ381HMel0G313tDKHcLRR0_nixkWg/edit?usp=drive_link">DATES & TIMES</a>
 				<ul>
-					<li>Working with dates and times</li>
 					<li><i>packages:</i> <b>datasets, lubridate, pacman, tidyverse, tsibble</b></li>
 					<li><i>dataset:</i> <b>datasets::EuStockMarkets</b></li>
 					<li><i>functions:</i> <b>ggplot::GAM</b></li></ul>
 			</li>
-			<li><a href="">LISTS</a>
+			<li><a href="https://docs.google.com/document/d/176nPwP-VP2qEK03l1LrpXD27lEVph4QLVopS9unOQ5g/edit?usp=drive_link">LISTS</a>
 				<ul>
-					<li>Working with lists</li>
 					<li><i>packages:</i> <b>pacman, tidyverse</b></li>
 					<li><i>dataset:</i> manual entry</li></ul>
 			</li>
-			<li><a href="">XML</a>
+			<li><a href="https://docs.google.com/document/d/1m84RycRB9p5CW31AWWi6nKFQ7bp-swJjOZflfPpVOvU/edit?usp=drive_link">XML</a>
 				<ul>
-					<li>Working with XML data</li>
 					<li><i>packages:</i> <b>pacman, tidyverse, xml2</b></li>
 					<li><i>dataset:</i> Missouri data portal</li>
-					<li><i>functions:</i> str-squish</li></ul>
+					<li><i>functions:</i> <b>str-squish</b></li></ul>
 			</li>
-			<li><a href="">CATEGORICAL</a>
+			<li><a href="https://docs.google.com/document/d/1vSkFRzriIiNfeRLy8kgcpI4Op068ATcluXdpLYkMrJo/edit?usp=drive_link">CATEGORICAL</a>
 				<ul>
-					<li>Working with categorical variables</li>
 					<li><i>packages:</i> <b>pacman, tidyverse, vcd</b></li>
 					<li><i>dataset:</i> <b>vcd::Arthritis</b></li></ul>
 			</li>
-			<li><a href="">FILTERING</a>
+			<li><a href="https://docs.google.com/document/d/1AxwP6CCo50qCYX91W6tDeeOGdqxuvTmNonW016WtpCc/edit?usp=drive_link">FILTERING</a>
 				<ul>
 					<li>Filtering cases and subgroups</li>
 					<li><i>packages:</i> <b>pacman, rio, tidyverse</b></li>
@@ -466,91 +598,64 @@ Here I explored tidyverse, piping and other tools that have become more intuitiv
 			</li>
 		</ul>
 	</dd>
-</dl>
-
 
 <dl>
-<dt><b>DATA MINING</b> - finding patterns in the noise</dt>
-<dd><span style="color:rgb(106,168,79)"><i><b>Database</b> datasets</i></span>
-	<ul><li><b>Mining Variables</b> (columns) 
-			<ul>
-				<li>which dimensions have most impact on data pattern?</li>
-				<li><a href="">DIMENSION REDUCTION</a>
-					<ul>
-					<li><i>datasets</i>: <b>optidigits.csv, datasets::swiss</b></li>
-					<li><i>methods</i>: <b>PCA, CDA, t_SNE</b></li>
-					</ul>
-				</li>
-			</ul>
-		</li>
-		<li><b>Mining Cases</b> (rows, observations)
-			<ul>
-				<li>looking for similarities in observations</li>
-				<li><a href="">CLUSTERING</a>
-					<ul>
-					<li><i>datasets</i>: <b>penguins.rds, datasets::iris</b></li>
-					<li><i>methods</i>: <b>hierarchical clustering, k-means, DBscan</b></li>
-					</ul>
-				</li>
-				<li><a href="">CLASSIFICATION</a>
-					<ul>
-					<li><i>datasets</i>: <b>spambase.csv, mlbench::BreastCancer</b></li>
-					<li><i>methods</i>: <b>k-nn, naive bayes, decision trees</b></li>
-					</ul>
-				</li>
-			</ul>
-		</li>
-	</ul>
-</dd>
-
-<dd><span style="color:rgb(106,168,79)"><i><b>List</b> dataset</i></span>
-	<ul>
-		<li>looking for behavioural associations: IF someone buys this THEN they likely will buy that</li>
-		<li><a href="">ASSOCIATION ANALYSIS</a>
-			<ul>
-				<li><i>datasets</i>: <b>arules::groceries, arules::Epub</b></li>
-				<li><i>methods</i>: <b>apriori, eclat, CDA</b></li>
-			</ul>
-		</li>
-	</ul>		
-</dd>
-
-
-<dd><span style="color:rgb(106,168,79)"><i><b>Time series</b> datasets</i></span>
-	<ul>
-		<li>how data changes over time</li>
-		<li><a href="">TIME SERIES ANALYSIS</a>
-			<ul>
-			<li><i>datasets</i>: <b>datasets::AirPassengers, datasets::euStockMarkets</b></li>
-			<li><i>methods</i>: <b>time-series decomposition, ARIMA, MLP</b></li>
-			</ul>
-		</li>	
-	</ul>
-</dd>
-
-<dd><span style="color:rgb(106,168,79)"><i><b>Text</b> datasets</i></span>
-	<ul><li><a href="">SENTIMENT ANALYSIS</a>
+<dt><b>DATA WRANGLING</b> - recoding data <b>values</b> in dataset</dt>
+	<dd><span style="color:rgb(106,168,79)"><i>Recoding <b>Variables</b></i></span>
 		<ul>
-		<li><i>datasets</i>: <b>TheIlliad.txt, LittleWomen.txt</b></li>
-		<li><i>methods</i>: 
+			<li><a href="https://docs.google.com/document/d/1YdCbzsghWNR9W_23f3ECunLwpEKxICUFUwtDLxxRsTc/edit?usp=drive_link">CATEGORICAL</a>
+				<ul>
+					<li><i>packages:</i> <b>margrittr, pacman, rio, tidyverse</b></li>
+					<li><i>dataset:</i> <b>MobileOS.US.xlsx</b></li>
+					<li><i>functions from <b>forcats</b>:</i> <b>fct_relevel(), fct_infreq(), fct_collapse(), fct_lump(), fct_lump-num()</b></li>
+				</ul>
+				</li>
+			<li><a href="https://docs.google.com/document/d/1EcJSSxiRcyjDFtY3RscEKykUqeadciD0V6dzP87nguk/edit?usp=drive_link">QUANTITATIVE</a>
+				<ul>
+					<li><i>packages:</i> <b>pacman, tidyverse</b></li>
+					<li><i>dataset:</i> enter data</li>
+					<li><i>functions:</i> <b>scale()</b></li>
+				</ul>
+			</li>
+		</ul>
+	</dd>
+	<dd><span style="color:rgb(106,168,79)"><i>Transforming <b>Outliers</b></i></span>
+		<ul><li><a href="https://docs.google.com/document/d/1fFsdmitsj2xfP8MJ5R1LQcsHtOKHQYoW23_u7EH5u4g/edit?usp=drive_link">OUTLIERS</a>
 			<ul>
-				<li>classsification: <b>binary classification</b></li>
-				<li>comparison: <b>sentiment scoring, visual word pairs</b></li>
+			<li><i>packages:</i> <b>datasets, pacman, tidyverse</b></li>
+			<li><i>datasets:</i> <b>datasets::islands</b></li>
+			<li><i>functions:</i> <b>enframe(), arrange(), filter(), pull(), select(), fitler()</b></li>
+			<li><i>method:</i> <b>windsorizing</b></li>
 			</ul>
-		</li>	
-	</ul>
-</dd>
+			</li>
+		</ul>
+	<dd><span style="color:rgb(106,168,79)"><i>Recode <b>Scores</b></i></span>
+		<ul>
+			<li><a href="https://docs.google.com/document/d/1z-Ur8nv4wppULBsoP-8bO1b2EMmV4dswCQJuigFvkrs/edit?usp=drive_link">COUNT-SCORES</a>
+				<ul>
+					<li><i>packages:</i> <b>pacman, rio, tidyverse</b></li>
+					<li><i>dataset:</i> <b>StateData.xlsx</b></li>
+					<li><i>functions:</i> <b>select(), arrange(), pull(), mutate(), as.tibble()</b></li>
+				</ul>
+			</li>
+			<li><a href="https://docs.google.com/document/d/1laBI6GffBMThTRu2NwP8_PtOxEqI7h-rJ0fLZuHrcgc/edit?usp=drive_link">AVERAGE-SCORES</a>
+				<ul>
+					<li><i>packages:</i> <b>pacman, rio, tidyverse</b></li>
+					<li><i>dataset:</i> <b>StateData.xlsx</b></li>
+					<li>functions: <b>as.tibble(), select(), mutate(), arrange(), pull()</b></li>
+				</ul>
+			</li>
+		</ul>
 
 </dl>
-
-
-
 
 
 </div>
-<br>
 
-<a href="index.html">back home</a>
+
+<a href="index.html">back home</a> | <a href="09_reports.html">back to reports</a>
+
+
 
 </font>
 </td>
